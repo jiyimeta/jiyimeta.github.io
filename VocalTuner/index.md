@@ -1,6 +1,8 @@
 # jiyi.metaの開発ページ
 ## VocalTuner
-[App Storeで見る](https://apps.apple.com/jp/app/id1505735245?ign-mpt=uo%3D4)
+[App Storeで見る](https://apps.apple.com/jp/app/id1505735245?ign-mpt=uo%3D4)  
+![](./img/VTIcon1024)
+
 音の高さを軌跡で確認できるチューナーです。
 
 iPhoneの内蔵マイクで拾った音の高さを、軌跡として画面に表示します。iPhoneに向けて歌ってみると、音の外しやしゃくりなど、一目瞭然です。
