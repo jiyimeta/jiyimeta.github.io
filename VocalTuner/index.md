@@ -1,7 +1,7 @@
 # jiyi.metaの開発ページ
 ## VocalTuner
 [App Storeで見る](https://apps.apple.com/jp/app/id1505735245?ign-mpt=uo%3D4)  
-![](./img/VTIcon1024)
+![](./img/VTIcon120.png)
 
 音の高さを軌跡で確認できるチューナーです。
 
