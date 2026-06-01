@@ -13,6 +13,9 @@ This Privacy Policy applies to all mobile applications provided by Kiichi Ito (h
 3. **Advertising**
    We use advertising networks to display ads. If you consent to tracking, targeted ads may be delivered based on your usage. This data is not linked to personally identifiable information.
 
+4. **Microphone (Some Apps Only)**
+   Some of our apps, such as voice and pitch tuning apps, use the microphone to analyze sound in real time. This audio is processed solely on your device. It is never recorded, stored, or transmitted to us or any third party.
+
 ## Sharing of Personal Information
 
 We do not share personal information with third parties, except as required by law.
