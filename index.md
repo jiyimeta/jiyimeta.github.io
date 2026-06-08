@@ -8,7 +8,7 @@ Harmolo makes apps that bring a little more to your music and everyday life.
 
 ### <img src="icons/vocaltuner.webp" width="30" height="30"> VocalTuner
 
-A tuner that draws your singing pitch as a real-time trail, so you can see and train your voice.
+A tuner that draws your singing pitch as a real-time trail.
 
 - [iOS: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
 - [Web](https://vocal-tuner-36497.web.app/)
@@ -27,7 +27,7 @@ A simple memo app for jotting down and organizing chord progressions.
 
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
-A clock widget that shows the time down to the seconds.
+A clock widget that shows the seconds.
 
 - [iOS: App Store](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
 

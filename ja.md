@@ -6,7 +6,7 @@ Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを
 
 ### <img src="icons/vocaltuner.webp" width="30" height="30"> VocalTuner
 
-歌声のピッチをリアルタイムの軌跡で描き、声を見ながら練習できるチューナー。
+歌声のピッチをリアルタイムの軌跡で描くチューナー。
 
 - [iOS版: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
 - [Web版](https://vocal-tuner-36497.web.app/)
@@ -25,7 +25,7 @@ Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを
 
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
-秒まで表示する時計ウィジェット。
+秒を表示する時計ウィジェット。
 
 - [iOS版: App Store](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
 

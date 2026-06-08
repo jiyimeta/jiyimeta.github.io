@@ -8,7 +8,7 @@ Harmolo 提供让音乐与日常生活更丰富一些的应用。
 
 ### <img src="icons/vocaltuner.webp" width="30" height="30"> VocalTuner
 
-以实时轨迹描绘歌声音高，让你看着声音练习的调音器。
+以实时轨迹描绘歌声音高的调音器。
 
 - [iOS 版: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
 - [Web 版](https://vocal-tuner-36497.web.app/)
@@ -27,7 +27,7 @@ Harmolo 提供让音乐与日常生活更丰富一些的应用。
 
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
-可显示到秒的时钟小组件。
+显示秒的时钟小组件。
 
 - [iOS 版: App Store](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
 

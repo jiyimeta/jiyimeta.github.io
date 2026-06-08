@@ -8,7 +8,7 @@ Harmolo(하모로)는 음악과 일상을 조금 더 풍요롭게 하는 앱을 
 
 ### <img src="icons/vocaltuner.webp" width="30" height="30"> VocalTuner
 
-노래의 음정을 실시간 궤적으로 그려, 목소리를 보면서 연습할 수 있는 튜너.
+노래의 음정을 실시간 궤적으로 그리는 튜너.
 
 - [iOS: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
 - [Web](https://vocal-tuner-36497.web.app/)
@@ -27,7 +27,7 @@ Harmolo(하모로)는 음악과 일상을 조금 더 풍요롭게 하는 앱을 
 
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
-초 단위까지 표시하는 시계 위젯.
+초를 표시하는 시계 위젯.
 
 - [iOS: App Store](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
 
