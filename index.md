@@ -2,34 +2,34 @@
 
 # Harmolo
 
-Harmolo is the app studio of Kiichi Ito, crafting tools for music and everyday life.
+Harmolo makes apps that bring a little more to your music and everyday life.
 
 ## Apps
 
-### VocalTuner
+### <img src="icons/vocaltuner.webp" width="30" height="30"></img> VocalTuner
 
 A tuner that draws your singing pitch as a real-time trail, so you can see and train your voice.
 
-- [iOS](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
+- [iOS: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
 - [Web](https://vocal-tuner-36497.web.app/)
 
-### folino
+### <img src="icons/folino.webp" width="30" height="30"></img> folino
 
 A sheet-music viewer and player that also organizes your scores.
 
-- [iOS](https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527)
+- [iOS: App Store](https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527)
 
-### Chord Memo
+### <img src="icons/chord_memo.webp" width="30" height="30"></img> Chord Memo
 
 A simple memo app for jotting down and organizing chord progressions.
 
-- [iOS](https://apps.apple.com/us/app/chord-memo/id6446309728)
+- [iOS: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
-### SeClock
+### <img src="icons/seclock.webp" width="30" height="30"></img> SeClock
 
 A clock widget that shows the time down to the seconds.
 
-- [iOS](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
+- [iOS: App Store](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
 
 ## Contact
 
