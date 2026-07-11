@@ -1,2 +1,4 @@
 title: Harmolo
 url: https://harmolo.com
+plugins:
+  - jekyll-redirect-from

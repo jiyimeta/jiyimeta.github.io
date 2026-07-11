@@ -1,4 +1,4 @@
-**English** | [日本語](./ja.md) | [한국어](./ko.md) | [中文](./zh.md)
+**English** | [日本語](./ja.md) | [한국어](./ko.md) | [简体中文](./zh-Hans.md) | [繁體中文](./zh-Hant.md) | [Deutsch](./de.md) | [Español](./es.md) | [Français](./fr.md) | [Italiano](./it.md) | [Nederlands](./nl.md) | [Português (BR)](./pt-BR.md) | [Русский](./ru.md) | [Türkçe](./tr.md)
 
 # Harmolo
 
@@ -11,6 +11,7 @@ Harmolo makes apps that bring a little more to your music and everyday life.
 A tuner that draws your singing pitch as a real-time trail.
 
 - [iOS: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
+- [Android: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.vocaltuner)
 - [Web](https://vocal-tuner-36497.web.app/)
 
 ### <img src="icons/folino.webp" width="30" height="30"> folino
@@ -18,6 +19,7 @@ A tuner that draws your singing pitch as a real-time trail.
 A sheet-music viewer and player that also organizes your scores.
 
 - [iOS: App Store](https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527)
+- [Android: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.folino)
 
 ### <img src="icons/chord_memo.webp" width="30" height="30"> Chord Memo
 

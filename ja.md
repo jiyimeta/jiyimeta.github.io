@@ -1,4 +1,4 @@
-[English](./index.md) | **日本語** | [한국어](./ko.md) | [中文](./zh.md)
+[English](./index.md) | **日本語** | [한국어](./ko.md) | [简体中文](./zh-Hans.md) | [繁體中文](./zh-Hant.md) | [Deutsch](./de.md) | [Español](./es.md) | [Français](./fr.md) | [Italiano](./it.md) | [Nederlands](./nl.md) | [Português (BR)](./pt-BR.md) | [Русский](./ru.md) | [Türkçe](./tr.md)
 
 Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを提供します。
 
@@ -9,6 +9,7 @@ Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを
 歌声のピッチをリアルタイムの軌跡で描くチューナー。
 
 - [iOS版: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
+- [Android版: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.vocaltuner)
 - [Web版](https://vocal-tuner-36497.web.app/)
 
 ### <img src="icons/folino.webp" width="30" height="30"> folino
@@ -16,6 +17,7 @@ Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを
 楽譜表示・再生アプリ。楽譜の整理にも便利。
 
 - [iOS版: App Store](https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527)
+- [Android版: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.folino)
 
 ### <img src="icons/chord_memo.webp" width="30" height="30"> Chord Memo
 

@@ -1,4 +1,4 @@
-[English](./index.md) | [日本語](./ja.md) | **한국어** | [中文](./zh.md)
+[English](./index.md) | [日本語](./ja.md) | **한국어** | [简体中文](./zh-Hans.md) | [繁體中文](./zh-Hant.md) | [Deutsch](./de.md) | [Español](./es.md) | [Français](./fr.md) | [Italiano](./it.md) | [Nederlands](./nl.md) | [Português (BR)](./pt-BR.md) | [Русский](./ru.md) | [Türkçe](./tr.md)
 
 # Harmolo
 
@@ -11,6 +11,7 @@ Harmolo(하모로)는 음악과 일상을 조금 더 풍요롭게 하는 앱을 
 노래의 음정을 실시간 궤적으로 그리는 튜너.
 
 - [iOS: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
+- [Android: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.vocaltuner)
 - [Web](https://vocal-tuner-36497.web.app/)
 
 ### <img src="icons/folino.webp" width="30" height="30"> folino
@@ -18,6 +19,7 @@ Harmolo(하모로)는 음악과 일상을 조금 더 풍요롭게 하는 앱을 
 악보 표시·재생 앱. 악보 정리에도 편리합니다.
 
 - [iOS: App Store](https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527)
+- [Android: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.folino)
 
 ### <img src="icons/chord_memo.webp" width="30" height="30"> Chord Memo
 
