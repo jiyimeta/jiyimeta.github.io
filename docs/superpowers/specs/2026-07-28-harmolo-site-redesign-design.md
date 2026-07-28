@@ -95,10 +95,13 @@ Locale pages get explicit permalinks — `/` for English, `/ja/`, `/ko/`, `/zh-H
 Privacy pages become `/privacy-policy/<locale>/`. Front matter also makes Jekyll render the files
 instead of copying them, which is what fixes the raw-Markdown problem.
 
-`jekyll-redirect-from` keeps the previously rendered `.html` paths (`/ja.html`) alive. The raw
-`.md` URLs cannot be preserved — a file cannot be both rendered and copied — so any external link
-pointing at a `.md` path has to be updated. The App Store Connect privacy policy URL is the one
-known consumer and must be checked.
+`jekyll-redirect-from` keeps the previously rendered `.html` paths (`/ja.html`) alive.
+
+`policy.md` restores `/policy.html`, which six App Store listings still point at as their privacy
+policy URL — it was deleted in 4d0cc91 and has been a 404 since. Apple refuses to modify
+`privacyPolicyUrl` on an app whose `appInfo` is `READY_FOR_SALE` (409, "can not be modified in the
+current state"), so those listings cannot be repointed without a version in flight. Serving the old
+URL again fixes all six at once and needs no App Store Connect change.
 
 ### Incidental fixes
 
