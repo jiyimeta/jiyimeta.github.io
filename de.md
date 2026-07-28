@@ -27,6 +27,12 @@ Eine einfache Notiz-App zum Festhalten und Ordnen von Akkordfolgen.
 
 - [iOS: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
+### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
+
+Ein Metronom, das auf mehreren Geräten synchron läuft.
+
+- [iOS: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
+
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
 Ein Uhr-Widget, das die Sekunden anzeigt.

@@ -27,6 +27,12 @@ Una semplice app di note per annotare e organizzare le progressioni di accordi.
 
 - [iOS: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
+### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
+
+Un metronomo che suona in sincronia su più dispositivi.
+
+- [iOS: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
+
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
 Un widget orologio che mostra i secondi.

@@ -27,6 +27,12 @@ Harmolo 提供让音乐与日常生活更丰富一些的应用。
 
 - [iOS 版: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
+### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
+
+可在多台设备上同步播放的节拍器。
+
+- [iOS 版: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
+
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
 显示秒的时钟小组件。

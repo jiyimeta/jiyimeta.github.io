@@ -27,6 +27,12 @@ Een eenvoudige notitie-app om akkoordprogressies te noteren en te ordenen.
 
 - [iOS: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
+### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
+
+Een metronoom die synchroon speelt op meerdere apparaten.
+
+- [iOS: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
+
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
 Een klok-widget die de seconden toont.

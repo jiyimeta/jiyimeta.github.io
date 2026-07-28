@@ -25,6 +25,12 @@ Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを
 
 - [iOS版: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
+### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
+
+複数のデバイスで同期再生できるメトロノーム。
+
+- [iOS版: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
+
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
 秒を表示する時計ウィジェット。

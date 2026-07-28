@@ -27,6 +27,12 @@ A simple memo app for jotting down and organizing chord progressions.
 
 - [iOS: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
 
+### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
+
+A metronome that plays in sync across multiple devices.
+
+- [iOS: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
+
 ### <img src="icons/seclock.webp" width="30" height="30"> SeClock
 
 A clock widget that shows the seconds.
