@@ -1,3 +1,11 @@
+---
+layout: page
+locale: es
+kind: privacy
+permalink: /privacy-policy/es/
+redirect_from:
+  - /privacy-policy/es.html
+---
 # Política de privacidad
 
 Esta Política de privacidad se aplica a todas las aplicaciones móviles proporcionadas por Harmolo (en adelante, «nosotros»).

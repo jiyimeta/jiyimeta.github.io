@@ -1,0 +1,41 @@
+# Locales in language-switcher order. `code` is used as the <html lang> value,
+# as the key into _data/i18n.yml, and as the privacy-policy file name.
+- code: en
+  name: English
+  path: /
+- code: ja
+  name: 日本語
+  path: /ja/
+- code: ko
+  name: 한국어
+  path: /ko/
+- code: zh-Hans
+  name: 简体中文
+  path: /zh-Hans/
+- code: zh-Hant
+  name: 繁體中文
+  path: /zh-Hant/
+- code: de
+  name: Deutsch
+  path: /de/
+- code: es
+  name: Español
+  path: /es/
+- code: fr
+  name: Français
+  path: /fr/
+- code: it
+  name: Italiano
+  path: /it/
+- code: nl
+  name: Nederlands
+  path: /nl/
+- code: pt-BR
+  name: Português (BR)
+  path: /pt-BR/
+- code: ru
+  name: Русский
+  path: /ru/
+- code: tr
+  name: Türkçe
+  path: /tr/

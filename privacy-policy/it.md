@@ -1,3 +1,11 @@
+---
+layout: page
+locale: it
+kind: privacy
+permalink: /privacy-policy/it/
+redirect_from:
+  - /privacy-policy/it.html
+---
 # Informativa sulla privacy
 
 La presente Informativa sulla privacy si applica a tutte le applicazioni mobili fornite da Harmolo (di seguito "noi").

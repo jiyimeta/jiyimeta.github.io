@@ -1,3 +1,3 @@
 ---
-redirect_to: /privacy-policy/zh-Hans
+redirect_to: /privacy-policy/zh-Hans/
 ---

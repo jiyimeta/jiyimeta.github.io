@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__contact">
+      {{ t.email_label }}:
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+
+    <p class="site-footer__links">
+      {%- if page.kind == 'privacy' %}
+      <a href="{{ current_locale.path | relative_url }}">{{ t.back_to_home }}</a>
+      {%- else %}
+      <a href="{{ '/privacy-policy/' | append: page.locale | append: '/' | relative_url }}">{{ t.privacy_link }}</a>
+      {%- endif %}
+    </p>
+
+    <p class="site-footer__copyright">© {{ site.time | date: '%Y' }} Harmolo</p>
+  </div>
+</footer>

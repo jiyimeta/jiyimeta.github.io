@@ -1,0 +1,492 @@
+/* ---------------------------------------------------------------- tokens */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f5f5f7;
+  --border: #d2d2d7;
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --accent: #0071e3;
+  --accent-hover: #0060c0;
+  --accent-contrast: #ffffff;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-menu: 0 12px 32px rgba(0, 0, 0, 0.14);
+
+  --radius-card: 20px;
+  --container: 960px;
+
+  /* Store-badge geometry, measured from the official artwork at 40px tall:
+     Apple's corner radius is 6.80px and Google's 3.96px, both bordered in
+     #a6a6a6. These do not change between colour schemes - Google publishes no
+     light variant - so they sit outside the light/dark token sets. */
+  --badge-height: 40px;
+  --radius-badge: 6px;
+  --badge-bg: #000000;
+  --badge-border: #a6a6a6;
+  --badge-text: #ffffff;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", Meiryo,
+    "Apple SD Gothic Neo", "Malgun Gothic", "PingFang SC", "Microsoft YaHei",
+    "PingFang TC", "Microsoft JhengHei", "Noto Sans", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --surface: #1d1d1f;
+    --border: #38383d;
+    --text: #f5f5f7;
+    --muted: #98989d;
+    --accent: #2997ff;
+    --accent-hover: #56aeff;
+    --accent-contrast: #000000;
+
+    --shadow-card: none;
+    --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.6);
+    --shadow-menu: 0 12px 32px rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* ------------------------------------------------------------------ base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container--narrow {
+  max-width: 720px;
+}
+
+/* ---------------------------------------------------------------- header */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .site-header {
+    background: color-mix(in srgb, var(--bg) 78%, transparent);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+.site-header__inner {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.wordmark {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------- language switcher */
+
+.lang {
+  position: relative;
+}
+
+.lang__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.84rem;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.lang__button::-webkit-details-marker {
+  display: none;
+}
+
+.lang__button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.lang__globe,
+.lang__chevron {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lang__chevron {
+  width: 13px;
+  height: 13px;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+}
+
+.lang[open] .lang__chevron {
+  transform: rotate(180deg);
+}
+
+.lang__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 30;
+  min-width: 200px;
+  max-height: min(70vh, 460px);
+  overflow-y: auto;
+  padding: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-menu);
+}
+
+.lang__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lang__menu a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.lang__menu a:hover {
+  background: var(--surface);
+}
+
+.lang__menu a[aria-current="true"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ hero */
+
+.hero {
+  padding: clamp(56px, 11vw, 116px) 0 clamp(36px, 6vw, 64px);
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: clamp(2.6rem, 8vw, 4.25rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.hero__tagline {
+  margin: 20px auto 0;
+  max-width: 34em;
+  font-size: clamp(1.02rem, 2.2vw, 1.28rem);
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* ------------------------------------------------------------- app cards */
+
+.apps {
+  padding-bottom: clamp(56px, 9vw, 104px);
+}
+
+.section-title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.app-card__icon {
+  width: 64px;
+  height: 64px;
+  flex: none;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.14));
+}
+
+.app-card__body {
+  min-width: 0;
+}
+
+.app-card__name {
+  margin: 2px 0 0;
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+
+.app-card__desc {
+  margin: 7px 0 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* Store badges.
+   Apple and Google ship one badge design each, both black with a #a6a6a6
+   border, and Google offers no light variant - so the row reads as black in
+   either colour scheme. The web button is built to the same recipe rather than
+   following the page's own palette, which would leave it looking foreign next
+   to two fixed-colour badges. */
+
+.app-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.store-badge {
+  display: block;
+  border-radius: var(--radius-badge);
+  transition: opacity 0.2s ease;
+}
+
+.store-badge img {
+  display: block;
+  height: var(--badge-height);
+  width: auto;
+}
+
+.web-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: var(--badge-height);
+  padding: 0 15px 0 12px;
+  border: 1px solid var(--badge-border);
+  border-radius: var(--radius-badge);
+  background: var(--badge-bg);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--badge-text);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.web-badge__icon {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  fill: currentColor;
+}
+
+.store-badge:hover,
+.web-badge:hover {
+  opacity: 0.82;
+}
+
+/* ----------------------------------------------------------------- prose */
+
+.prose {
+  padding: clamp(40px, 7vw, 72px) 0 clamp(48px, 8vw, 88px);
+}
+
+.prose h1 {
+  margin: 0 0 0.7em;
+  font-size: clamp(1.9rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.prose h2 {
+  margin: 2.4em 0 0.7em;
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.prose p,
+.prose li {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.prose ol,
+.prose ul {
+  padding-left: 1.25em;
+}
+
+.prose li {
+  margin-bottom: 0.9em;
+}
+
+.prose strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- footer */
+
+.site-footer {
+  flex: none;
+  border-top: 1px solid var(--border);
+  padding: 40px 0 48px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0 0 8px;
+}
+
+.site-footer__copyright {
+  margin-top: 18px;
+  font-size: 0.82rem;
+}
+
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---------------------------------------------------------------- mobile */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .app-card {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .app-card__icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .lang__current {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

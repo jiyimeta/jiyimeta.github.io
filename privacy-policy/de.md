@@ -1,3 +1,11 @@
+---
+layout: page
+locale: de
+kind: privacy
+permalink: /privacy-policy/de/
+redirect_from:
+  - /privacy-policy/de.html
+---
 # Datenschutzerklärung
 
 Diese Datenschutzerklärung gilt für alle mobilen Anwendungen, die von Harmolo (nachfolgend „wir“ oder „uns“) bereitgestellt werden.

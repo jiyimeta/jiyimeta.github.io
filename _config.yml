@@ -1,4 +1,18 @@
 title: Harmolo
+email: contact@harmolo.com
 url: https://harmolo.com
+
 plugins:
   - jekyll-redirect-from
+
+# Overriding `exclude` replaces Jekyll's defaults, so the usual entries are
+# repeated here alongside `docs` (design notes, not part of the site).
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - docs

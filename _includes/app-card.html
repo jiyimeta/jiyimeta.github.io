@@ -1,0 +1,45 @@
+{%- comment -%}
+  Reads `app` from the surrounding loop and `t` from the layout.
+
+  App Store and Google Play get their official localized badges; the web link has
+  no official badge, so it uses a button built to match them - same height, same
+  black fill, same #a6a6a6 border - in both colour schemes.
+{%- endcomment -%}
+{%- assign badge = site.data.badges[page.locale] -%}
+<li class="app-card">
+  <img class="app-card__icon"
+       src="{{ '/icons/' | append: app.icon | relative_url }}"
+       width="64" height="64" alt="" loading="lazy" decoding="async">
+
+  <div class="app-card__body">
+    <h3 class="app-card__name">{{ app.name }}</h3>
+    <p class="app-card__desc">{{ t.apps[app.id] }}</p>
+
+    <ul class="app-card__links">
+      {%- for link in app.links %}
+      <li>
+        {%- if link.store == 'ios' %}
+        <a class="store-badge" href="{{ link.url }}">
+          <img src="{{ '/assets/badges/app-store-' | append: page.locale | append: '.svg' | relative_url }}"
+               width="{{ badge.ios.width }}" height="{{ badge.ios.height }}"
+               alt="{{ t.stores.ios }}" loading="lazy" decoding="async">
+        </a>
+        {%- elsif link.store == 'android' %}
+        <a class="store-badge" href="{{ link.url }}">
+          <img src="{{ '/assets/badges/google-play-' | append: page.locale | append: '.png' | relative_url }}"
+               width="{{ badge.android.width }}" height="{{ badge.android.height }}"
+               alt="{{ t.stores.android }}" loading="lazy" decoding="async">
+        </a>
+        {%- else %}
+        <a class="web-badge" href="{{ link.url }}">
+          <svg class="web-badge__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          <span>{{ t.stores.web }}</span>
+        </a>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</li>

@@ -1,3 +1,3 @@
 ---
-redirect_to: /zh-Hans
+redirect_to: /zh-Hans/
 ---

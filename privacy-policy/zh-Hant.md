@@ -1,3 +1,11 @@
+---
+layout: page
+locale: zh-Hant
+kind: privacy
+permalink: /privacy-policy/zh-Hant/
+redirect_from:
+  - /privacy-policy/zh-Hant.html
+---
 # 隱私政策
 
 本隱私政策適用於 Harmolo（以下簡稱「我們」）所提供的所有行動應用程式（以下簡稱「本應用程式」）。

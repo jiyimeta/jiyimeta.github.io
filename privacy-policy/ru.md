@@ -1,3 +1,11 @@
+---
+layout: page
+locale: ru
+kind: privacy
+permalink: /privacy-policy/ru/
+redirect_from:
+  - /privacy-policy/ru.html
+---
 # Политика конфиденциальности
 
 Настоящая Политика конфиденциальности распространяется на все мобильные приложения, предоставляемые Harmolo (далее — «мы»).

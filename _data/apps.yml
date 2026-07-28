@@ -1,0 +1,42 @@
+# Language-independent app data. Descriptions live in _data/i18n.yml under the
+# matching `id`, so adding an app means editing this file and that one.
+- id: vocaltuner
+  name: VocalTuner
+  icon: vocaltuner.webp
+  links:
+    - store: ios
+      url: https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245
+    - store: android
+      url: https://play.google.com/store/apps/details?id=com.harmolo.vocaltuner
+    - store: web
+      url: https://vocal-tuner-36497.web.app/
+
+- id: folino
+  name: folino
+  icon: folino.webp
+  links:
+    - store: ios
+      url: https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527
+    - store: android
+      url: https://play.google.com/store/apps/details?id=com.harmolo.folino
+
+- id: chord_memo
+  name: Chord Memo
+  icon: chord_memo.webp
+  links:
+    - store: ios
+      url: https://apps.apple.com/us/app/chord-memo/id6446309728
+
+- id: synced_metronome
+  name: Synced Metronome
+  icon: synced_metronome.webp
+  links:
+    - store: ios
+      url: https://apps.apple.com/us/app/synced-metronome/id6791674072
+
+- id: seclock
+  name: SeClock
+  icon: seclock.webp
+  links:
+    - store: ios
+      url: https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658

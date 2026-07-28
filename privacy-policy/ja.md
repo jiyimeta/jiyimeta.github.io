@@ -1,3 +1,11 @@
+---
+layout: page
+locale: ja
+kind: privacy
+permalink: /privacy-policy/ja/
+redirect_from:
+  - /privacy-policy/ja.html
+---
 # プライバシーポリシー
 
 本プライバシーポリシーは、Harmolo（以下「当方」）が提供するすべてのモバイルアプリケーション（以下「本アプリ」）に適用されます。

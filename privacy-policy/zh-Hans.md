@@ -1,3 +1,11 @@
+---
+layout: page
+locale: zh-Hans
+kind: privacy
+permalink: /privacy-policy/zh-Hans/
+redirect_from:
+  - /privacy-policy/zh-Hans.html
+---
 # 隐私政策
 
 本隐私政策适用于 Harmolo（以下简称“我们”）所提供的所有移动应用程序（以下简称“本应用”）。

@@ -1,3 +1,11 @@
+---
+layout: page
+locale: nl
+kind: privacy
+permalink: /privacy-policy/nl/
+redirect_from:
+  - /privacy-policy/nl.html
+---
 # Privacybeleid
 
 Dit Privacybeleid is van toepassing op alle mobiele applicaties die door Harmolo (hierna "wij" of "ons") worden aangeboden.

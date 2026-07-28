@@ -1,3 +1,11 @@
+---
+layout: page
+locale: ko
+kind: privacy
+permalink: /privacy-policy/ko/
+redirect_from:
+  - /privacy-policy/ko.html
+---
 # 개인정보 처리방침
 
 본 개인정보 처리방침은 Harmolo(이하 "당사")가 제공하는 모든 모바일 애플리케이션(이하 "본 앱")에 적용됩니다.

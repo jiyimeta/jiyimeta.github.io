@@ -1,0 +1,17 @@
+{%- assign t = site.data.i18n[page.locale] -%}
+{%- assign current_locale = site.data.locales | where: 'code', page.locale | first -%}
+<!DOCTYPE html>
+<html lang="{{ page.locale }}">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body>
+    {%- include header.html -%}
+
+    <main id="main">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+  </body>
+</html>

@@ -1,0 +1,236 @@
+# UI strings and app descriptions, keyed by locale code (see _data/locales.yml).
+# Every locale must define the same keys; `apps` keys match ids in _data/apps.yml.
+
+en:
+  tagline: Harmolo makes apps that bring a little more to your music and everyday life.
+  apps_heading: Apps
+  language_label: Language
+  email_label: Email
+  privacy_link: Privacy policy
+  back_to_home: Back to home
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: A tuner that draws your singing pitch as a real-time trail.
+    folino: A sheet-music viewer and player that also organizes your scores.
+    chord_memo: A simple memo app for jotting down and organizing chord progressions.
+    synced_metronome: A metronome that plays in sync across multiple devices.
+    seclock: A clock widget that shows the seconds.
+
+ja:
+  tagline: Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを提供します。
+  apps_heading: Apps
+  language_label: 言語
+  email_label: メールアドレス
+  privacy_link: プライバシーポリシー
+  back_to_home: ホームに戻る
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: 歌声のピッチをリアルタイムの軌跡で描くチューナー。
+    folino: 楽譜表示・再生アプリ。楽譜の整理にも便利。
+    chord_memo: コード進行を手軽にメモして整理できる、シンプルなアプリ。
+    synced_metronome: 複数のデバイスで同期再生できるメトロノーム。
+    seclock: 秒を表示する時計ウィジェット。
+
+ko:
+  tagline: Harmolo(하모로)는 음악과 일상을 조금 더 풍요롭게 하는 앱을 제공합니다.
+  apps_heading: Apps
+  language_label: 언어
+  email_label: 이메일
+  privacy_link: 개인정보 처리방침
+  back_to_home: 홈으로 돌아가기
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: 노래의 음정을 실시간 궤적으로 그리는 튜너.
+    folino: 악보 표시·재생 앱. 악보 정리에도 편리합니다.
+    chord_memo: 코드 진행을 간편하게 메모하고 정리할 수 있는 간단한 앱.
+    synced_metronome: 여러 기기에서 동기화 재생할 수 있는 메트로놈.
+    seclock: 초를 표시하는 시계 위젯.
+
+zh-Hans:
+  tagline: Harmolo 提供让音乐与日常生活更丰富一些的应用。
+  apps_heading: Apps
+  language_label: 语言
+  email_label: 电子邮箱
+  privacy_link: 隐私政策
+  back_to_home: 返回首页
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: 以实时轨迹描绘歌声音高的调音器。
+    folino: 乐谱查看与播放应用，还能整理乐谱。
+    chord_memo: 轻松记录并整理和弦进行的简单备忘应用。
+    synced_metronome: 可在多台设备上同步播放的节拍器。
+    seclock: 显示秒的时钟小组件。
+
+zh-Hant:
+  tagline: Harmolo 提供讓音樂與日常生活更豐富一些的應用程式。
+  apps_heading: Apps
+  language_label: 語言
+  email_label: 電子郵件
+  privacy_link: 隱私政策
+  back_to_home: 返回首頁
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: 以即時軌跡描繪歌聲音高的調音器。
+    folino: 樂譜檢視與播放應用程式，還能整理樂譜。
+    chord_memo: 輕鬆記錄並整理和弦進行的簡單備忘應用程式。
+    synced_metronome: 可在多台裝置上同步播放的節拍器。
+    seclock: 顯示秒數的時鐘小工具。
+
+de:
+  tagline: Harmolo entwickelt Apps, die deiner Musik und deinem Alltag ein wenig mehr geben.
+  apps_heading: Apps
+  language_label: Sprache
+  email_label: E-Mail
+  privacy_link: Datenschutzerklärung
+  back_to_home: Zurück zur Startseite
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Ein Stimmgerät, das die Tonhöhe deines Gesangs als Verlaufsspur in Echtzeit zeichnet.
+    folino: Ein Notenbetrachter und -player, der auch deine Notensammlung organisiert.
+    chord_memo: Eine einfache Notiz-App zum Festhalten und Ordnen von Akkordfolgen.
+    synced_metronome: Ein Metronom, das auf mehreren Geräten synchron läuft.
+    seclock: Ein Uhr-Widget, das die Sekunden anzeigt.
+
+es:
+  tagline: Harmolo crea apps que aportan un poco más a tu música y a tu día a día.
+  apps_heading: Apps
+  language_label: Idioma
+  email_label: Correo electrónico
+  privacy_link: Política de privacidad
+  back_to_home: Volver al inicio
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Un afinador que dibuja el tono de tu voz como un trazo en tiempo real.
+    folino: Un visor y reproductor de partituras que también organiza tu colección.
+    chord_memo: Una sencilla app de notas para apuntar y organizar progresiones de acordes.
+    synced_metronome: Un metrónomo que suena sincronizado en varios dispositivos.
+    seclock: Un widget de reloj que muestra los segundos.
+
+fr:
+  tagline: Harmolo crée des applications qui apportent un peu plus à votre musique et à votre quotidien.
+  apps_heading: Apps
+  language_label: Langue
+  email_label: E-mail
+  privacy_link: Politique de confidentialité
+  back_to_home: Retour à l'accueil
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Un accordeur qui trace la hauteur de votre voix sous forme de tracé en temps réel.
+    folino: Une visionneuse et un lecteur de partitions qui organise aussi votre collection.
+    chord_memo: Une appli de notes simple pour noter et organiser vos suites d'accords.
+    synced_metronome: Un métronome qui joue en synchronisation sur plusieurs appareils.
+    seclock: Un widget d'horloge qui affiche les secondes.
+
+it:
+  tagline: Harmolo crea app che aggiungono qualcosa in più alla tua musica e alla tua vita di tutti i giorni.
+  apps_heading: Apps
+  language_label: Lingua
+  email_label: Email
+  privacy_link: Informativa sulla privacy
+  back_to_home: Torna alla home
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Un accordatore che disegna l'intonazione della tua voce come una traccia in tempo reale.
+    folino: Un visualizzatore e lettore di spartiti che organizza anche la tua raccolta.
+    chord_memo: Una semplice app di note per annotare e organizzare le progressioni di accordi.
+    synced_metronome: Un metronomo che suona in sincronia su più dispositivi.
+    seclock: Un widget orologio che mostra i secondi.
+
+nl:
+  tagline: Harmolo maakt apps die je muziek en dagelijks leven een beetje verrijken.
+  apps_heading: Apps
+  language_label: Taal
+  email_label: E-mail
+  privacy_link: Privacybeleid
+  back_to_home: Terug naar de startpagina
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Een stemapparaat dat de toonhoogte van je zang als een spoor in realtime tekent.
+    folino: Een bladmuziekviewer en -speler die ook je partituren ordent.
+    chord_memo: Een eenvoudige notitie-app om akkoordprogressies te noteren en te ordenen.
+    synced_metronome: Een metronoom die synchroon speelt op meerdere apparaten.
+    seclock: Een klok-widget die de seconden toont.
+
+pt-BR:
+  tagline: A Harmolo cria apps que trazem um pouco mais para a sua música e o seu dia a dia.
+  apps_heading: Apps
+  language_label: Idioma
+  email_label: E-mail
+  privacy_link: Política de Privacidade
+  back_to_home: Voltar ao início
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Um afinador que desenha o tom da sua voz como um traço em tempo real.
+    folino: Um visualizador e reprodutor de partituras que também organiza a sua coleção.
+    chord_memo: Um app de notas simples para anotar e organizar progressões de acordes.
+    synced_metronome: Um metrônomo que toca em sincronia em vários dispositivos.
+    seclock: Um widget de relógio que mostra os segundos.
+
+ru:
+  tagline: Harmolo создаёт приложения, которые делают вашу музыку и повседневную жизнь немного богаче.
+  apps_heading: Apps
+  language_label: Язык
+  email_label: Эл. почта
+  privacy_link: Политика конфиденциальности
+  back_to_home: На главную
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Веб
+  apps:
+    vocaltuner: Тюнер, отображающий высоту вашего голоса в виде траектории в реальном времени.
+    folino: Просмотрщик и проигрыватель нот, который также помогает упорядочивать вашу коллекцию.
+    chord_memo: Простое приложение для заметок, чтобы записывать и упорядочивать аккордовые последовательности.
+    synced_metronome: Метроном, который синхронно звучит на нескольких устройствах.
+    seclock: Виджет часов, который показывает секунды.
+
+tr:
+  tagline: Harmolo, müziğinize ve günlük yaşamınıza biraz daha fazlasını katan uygulamalar geliştirir.
+  apps_heading: Apps
+  language_label: Dil
+  email_label: E-posta
+  privacy_link: Gizlilik Politikası
+  back_to_home: Ana sayfaya dön
+  stores:
+    ios: App Store
+    android: Google Play
+    web: Web
+  apps:
+    vocaltuner: Şarkı söylerken sesinizin perdesini gerçek zamanlı bir iz olarak çizen bir akort aleti.
+    folino: Notaları görüntüleyip çalan, koleksiyonunuzu da düzenleyen bir uygulama.
+    chord_memo: Akor dizilerini not almak ve düzenlemek için basit bir not uygulaması.
+    synced_metronome: Birden fazla cihazda senkron çalan bir metronom.
+    seclock: Saniyeleri gösteren bir saat widget'ı.

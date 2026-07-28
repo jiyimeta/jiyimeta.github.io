@@ -1,3 +1,11 @@
+---
+layout: page
+locale: tr
+kind: privacy
+permalink: /privacy-policy/tr/
+redirect_from:
+  - /privacy-policy/tr.html
+---
 # Gizlilik Politikası
 
 Bu Gizlilik Politikası, Harmolo (bundan böyle "biz") tarafından sağlanan tüm mobil uygulamalar için geçerlidir.

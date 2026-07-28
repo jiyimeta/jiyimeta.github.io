@@ -1,46 +1,7 @@
-[English](./index.md) | **日本語** | [한국어](./ko.md) | [简体中文](./zh-Hans.md) | [繁體中文](./zh-Hant.md) | [Deutsch](./de.md) | [Español](./es.md) | [Français](./fr.md) | [Italiano](./it.md) | [Nederlands](./nl.md) | [Português (BR)](./pt-BR.md) | [Русский](./ru.md) | [Türkçe](./tr.md)
-
-Harmolo (ハモロ) は、音楽と暮らしを少し豊かにするアプリを提供します。
-
-## Apps
-
-### <img src="icons/vocaltuner.webp" width="30" height="30"> VocalTuner
-
-歌声のピッチをリアルタイムの軌跡で描くチューナー。
-
-- [iOS版: App Store](https://apps.apple.com/us/app/vocaltuner-pitch-training/id1505735245)
-- [Android版: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.vocaltuner)
-- [Web版](https://vocal-tuner-36497.web.app/)
-
-### <img src="icons/folino.webp" width="30" height="30"> folino
-
-楽譜表示・再生アプリ。楽譜の整理にも便利。
-
-- [iOS版: App Store](https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527)
-- [Android版: Google Play](https://play.google.com/store/apps/details?id=com.harmolo.folino)
-
-### <img src="icons/chord_memo.webp" width="30" height="30"> Chord Memo
-
-コード進行を手軽にメモして整理できる、シンプルなアプリ。
-
-- [iOS版: App Store](https://apps.apple.com/us/app/chord-memo/id6446309728)
-
-### <img src="icons/synced_metronome.webp" width="30" height="30"> Synced Metronome
-
-複数のデバイスで同期再生できるメトロノーム。
-
-- [iOS版: App Store](https://apps.apple.com/us/app/synced-metronome/id6791674072)
-
-### <img src="icons/seclock.webp" width="30" height="30"> SeClock
-
-秒を表示する時計ウィジェット。
-
-- [iOS版: App Store](https://apps.apple.com/us/app/seclock-seconds-clock-widget/id6445807658)
-
-## お問い合わせ
-
-メールアドレス: [jiyi.meta@gmail.com](mailto:jiyi.meta@gmail.com)
-
-## プライバシーポリシー
-
-- [プライバシーポリシー](./privacy-policy/ja.md)
+---
+layout: home
+locale: ja
+permalink: /ja/
+redirect_from:
+  - /ja.html
+---

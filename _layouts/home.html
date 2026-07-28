@@ -1,0 +1,23 @@
+---
+layout: base
+---
+{%- assign t = site.data.i18n[page.locale] -%}
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Harmolo</h1>
+    <p class="hero__tagline">{{ t.tagline }}</p>
+  </div>
+</section>
+
+<section class="apps">
+  <div class="container">
+    <h2 class="section-title">{{ t.apps_heading }}</h2>
+
+    <ul class="app-grid">
+      {%- for app in site.data.apps %}
+      {%- include app-card.html %}
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
