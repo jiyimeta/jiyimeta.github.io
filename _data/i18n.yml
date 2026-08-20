@@ -1,5 +1,12 @@
 # UI strings and app descriptions, keyed by locale code (see _data/locales.yml).
 # Every locale must define the same keys; `apps` keys match ids in _data/apps.yml.
+#
+# `app_names` is the one exception: it overrides the English name in _data/apps.yml
+# and is only present where the App Store actually lists the app under a
+# translated name, so most locales omit it entirely. The names follow the App
+# Store listing with its trailing keyword phrase removed - "秒時計 for Widget" and
+# "コード進行メモ" keep everything that carries meaning, while the tail of
+# "VocalTuner 音感・音域チェック・ボイトレに" is search wording, not a name.
 
 en:
   tagline: Harmolo makes apps that bring a little more to your music and everyday life.
@@ -30,6 +37,11 @@ ja:
     ios: App Store
     android: Google Play
     web: Web
+  app_names:
+    folino: folino (フォリノ)
+    chord_memo: コード進行メモ
+    synced_metronome: 同期メトロノーム
+    seclock: 秒時計 for Widget
   apps:
     vocaltuner: 歌声のピッチをリアルタイムの軌跡で描くチューナー。
     folino: 楽譜表示・再生アプリ。楽譜の整理にも便利。
@@ -48,6 +60,8 @@ ko:
     ios: App Store
     android: Google Play
     web: Web
+  app_names:
+    synced_metronome: 동기화 메트로놈
   apps:
     vocaltuner: 노래의 음정을 실시간 궤적으로 그리는 튜너.
     folino: 악보 표시·재생 앱. 악보 정리에도 편리합니다.
@@ -66,6 +80,8 @@ zh-Hans:
     ios: App Store
     android: Google Play
     web: Web
+  app_names:
+    synced_metronome: 同步节拍器
   apps:
     vocaltuner: 以实时轨迹描绘歌声音高的调音器。
     folino: 乐谱查看与播放应用，还能整理乐谱。
@@ -84,6 +100,8 @@ zh-Hant:
     ios: App Store
     android: Google Play
     web: Web
+  app_names:
+    synced_metronome: 同步節拍器
   apps:
     vocaltuner: 以即時軌跡描繪歌聲音高的調音器。
     folino: 樂譜檢視與播放應用程式，還能整理樂譜。
