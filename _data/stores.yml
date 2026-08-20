@@ -7,16 +7,7 @@
 # `apple` replaces the country segment of the App Store URL. The App Store picks
 # the page language from the storefront, not from a language parameter, so the
 # country code is what does the localizing. `apple_lang` adds `?l=` on top, and
-# is only needed for the two storefronts whose default language is not the one
-# we want:
-#
-#   tr - the Turkish storefront serves English by default, so `?l=tr` is the
-#        only way to get Turkish.
-#   fr - TEMPORARY. folino, Chord Memo and SeClock are not yet available in the
-#        French storefront (their `/fr/` pages 404), so French readers are sent
-#        to the Canadian storefront in French instead. Once App Store Connect
-#        has propagated France for those apps, change this entry back to
-#        `{ apple: fr, play: fr }` and drop the `apple_lang`.
+# is only needed for Turkey, whose storefront serves English by default.
 #
 # `play` is the Google Play `hl` value. Play treats it as a pure language
 # switch, independent of the storefront country, so no availability caveats
@@ -29,7 +20,7 @@ zh-Hans: { apple: cn, play: zh-CN }
 zh-Hant: { apple: tw, play: zh-TW }
 de:      { apple: de, play: de }
 es:      { apple: es, play: es }
-fr:      { apple: ca, apple_lang: fr, play: fr }
+fr:      { apple: fr, play: fr }
 it:      { apple: it, play: it }
 nl:      { apple: nl, play: nl }
 pt-BR:   { apple: br, play: pt-BR }
