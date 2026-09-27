@@ -1,6 +1,6 @@
 {%- comment -%}
   Language switcher. A <details> element so it works without JavaScript; the menu
-  points at the same kind of page (home or privacy) in each locale.
+  points at the same kind of page (home, or the privacy page under `locale_base`) in each locale.
 {%- endcomment -%}
 <header class="site-header">
   <div class="container site-header__inner">
@@ -22,8 +22,8 @@
       <nav class="lang__menu" aria-label="{{ t.language_label }}">
         <ul>
           {%- for l in site.data.locales %}
-            {%- if page.kind == 'privacy' -%}
-              {%- assign locale_url = '/privacy-policy/' | append: l.code | append: '/' -%}
+            {%- if locale_base -%}
+              {%- assign locale_url = locale_base | append: l.code | append: '/' -%}
             {%- else -%}
               {%- assign locale_url = l.path -%}
             {%- endif %}

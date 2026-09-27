@@ -6,7 +6,7 @@
     </p>
 
     <p class="site-footer__links">
-      {%- if page.kind == 'privacy' %}
+      {%- if locale_base %}
       <a href="{{ current_locale.path | relative_url }}">{{ t.back_to_home }}</a>
       {%- else %}
       <a href="{{ '/privacy-policy/' | append: page.locale | append: '/' | relative_url }}">{{ t.privacy_link }}</a>

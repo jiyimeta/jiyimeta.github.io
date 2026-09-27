@@ -58,6 +58,8 @@
 
 {%- if page.kind == 'privacy' -%}
   {%- assign page_title = t.privacy_link | append: ' | ' | append: site.title -%}
+{%- elsif page.kind == 'folino-privacy' -%}
+  {%- assign page_title = 'folino ' | append: t.privacy_link | append: ' | ' | append: site.title -%}
 {%- else -%}
   {%- assign page_title = site.title -%}
 {%- endif -%}
@@ -67,15 +69,15 @@
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
 {%- for l in site.data.locales %}
-  {%- if page.kind == 'privacy' -%}
-    {%- assign alt_url = '/privacy-policy/' | append: l.code | append: '/' -%}
+  {%- if locale_base -%}
+    {%- assign alt_url = locale_base | append: l.code | append: '/' -%}
   {%- else -%}
     {%- assign alt_url = l.path -%}
   {%- endif %}
 <link rel="alternate" hreflang="{{ l.code }}" href="{{ alt_url | absolute_url }}">
 {%- endfor %}
-{%- if page.kind == 'privacy' %}
-<link rel="alternate" hreflang="x-default" href="{{ '/privacy-policy/en/' | absolute_url }}">
+{%- if locale_base %}
+<link rel="alternate" hreflang="x-default" href="{{ locale_base | append: 'en/' | absolute_url }}">
 {%- else %}
 <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
 {%- endif %}
