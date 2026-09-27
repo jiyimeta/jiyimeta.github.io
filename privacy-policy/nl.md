@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Privacybeleid
 
-Dit Privacybeleid is van toepassing op alle mobiele applicaties die door Harmolo (hierna "wij" of "ons") worden aangeboden.
+Dit Privacybeleid is van toepassing op alle mobiele applicaties die door Harmolo (hierna "wij" of "ons") worden aangeboden, met uitzondering van folino, waarvoor een eigen [Privacybeleid van folino](/folino/privacy-policy/nl/) geldt.
 
 Onze apps verschillen in wat ze doen, dus **niet elke hieronder beschreven praktijk is op elke app van toepassing**. Elke app verzamelt alleen de gegevens die relevant zijn voor haar eigen functies — veel van onze apps verzamelen niets meer dan optionele crashdiagnostiek en werken volledig offline. Voor de exacte gegevens die een specifieke app verwerkt, raadpleeg je de gegevensinformatie van die app op de betreffende storepagina (de privacydetails in de App Store of het gedeelte "Gegevensbeveiliging" in Google Play).
 

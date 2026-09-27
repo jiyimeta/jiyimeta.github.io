@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Política de privacidad
 
-Esta Política de privacidad se aplica a todas las aplicaciones móviles proporcionadas por Harmolo (en adelante, «nosotros»).
+Esta Política de privacidad se aplica a todas las aplicaciones móviles proporcionadas por Harmolo (en adelante, «nosotros»), excepto folino, que tiene su propia [Política de privacidad de folino](/folino/privacy-policy/es/).
 
 Nuestras aplicaciones difieren en lo que hacen, por lo que **no todas las prácticas descritas a continuación se aplican a todas las aplicaciones**. Cada aplicación recopila únicamente los datos relevantes para sus propias funciones; muchas de nuestras aplicaciones no recopilan nada más allá de diagnósticos de fallos opcionales y funcionan totalmente sin conexión. Para conocer los datos exactos que gestiona una aplicación concreta, consulte la información de datos de esa aplicación en su página de la tienda (los detalles de privacidad en la App Store o la sección de Seguridad de los datos en Google Play).
 

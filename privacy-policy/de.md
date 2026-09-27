@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Datenschutzerklärung
 
-Diese Datenschutzerklärung gilt für alle mobilen Anwendungen, die von Harmolo (nachfolgend „wir“ oder „uns“) bereitgestellt werden.
+Diese Datenschutzerklärung gilt für alle mobilen Anwendungen, die von Harmolo (nachfolgend „wir“ oder „uns“) bereitgestellt werden, mit Ausnahme von folino, für das eine eigene [folino Datenschutzerklärung](/folino/privacy-policy/de/) gilt.
 
 Unsere Apps unterscheiden sich in ihren Funktionen, daher **trifft nicht jede der nachfolgend beschriebenen Praktiken auf jede App zu**. Jede App erfasst nur die für ihre eigenen Funktionen relevanten Daten – viele unserer Apps erfassen nichts außer optionalen Absturzdiagnosen und funktionieren vollständig offline. Welche Daten eine bestimmte App genau verarbeitet, entnehmen Sie den Datenschutzangaben der App auf ihrer Store-Seite (die Datenschutzdetails im App Store oder der Abschnitt „Datensicherheit“ bei Google Play).
 

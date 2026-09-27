@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Politique de confidentialité
 
-La présente Politique de confidentialité s'applique à toutes les applications mobiles fournies par Harmolo (ci-après « nous »).
+La présente Politique de confidentialité s'applique à toutes les applications mobiles fournies par Harmolo (ci-après « nous »), à l'exception de folino, qui dispose de sa propre [Politique de confidentialité de folino](/folino/privacy-policy/fr/).
 
 Nos applications diffèrent par leurs fonctions ; **toutes les pratiques décrites ci-dessous ne s'appliquent donc pas à chaque application**. Chaque application ne collecte que les données pertinentes pour ses propres fonctions — bon nombre de nos applications ne collectent rien d'autre que des diagnostics de plantage facultatifs et fonctionnent entièrement hors ligne. Pour connaître les données précises traitées par une application donnée, consultez les informations sur les données de cette application sur sa page de store (les détails de confidentialité sur l'App Store ou la section « Sécurité des données » sur Google Play).
 
