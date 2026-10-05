@@ -13,7 +13,8 @@
       {%- endcomment %}
       {%- assign fh = site.data.folino_home[page.locale] %}
       {%- if page.kind == 'folino-faq' %}
-      <a href="{{ '/folino/' | append: page.locale | append: '/' | relative_url }}">folino</a> ·
+      {%- include folino-home-url.html code=page.locale %}
+      <a href="{{ folino_home_url | relative_url }}">folino</a> ·
       {%- else %}
       <a href="{{ '/folino/faq/' | append: page.locale | append: '/' | relative_url }}">{{ fh.nav.faq }}</a> ·
       {%- endif %}

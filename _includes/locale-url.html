@@ -1,0 +1,13 @@
+{%- comment -%}
+  Sets `locale_url` to this page's counterpart in another locale - `include.code`, whose home path is
+  `include.path`. Pages under `locale_base` put every locale in a folder of its own, except folino's home,
+  whose English page is /folino/ itself the way Harmolo's English home is / (the marketing URL needs no
+  language in it); the home pages use each locale's own `path`.
+{%- endcomment -%}
+{%- if page.kind == 'folino-home' and include.code == 'en' -%}
+  {%- assign locale_url = locale_base -%}
+{%- elsif locale_base -%}
+  {%- assign locale_url = locale_base | append: include.code | append: '/' -%}
+{%- else -%}
+  {%- assign locale_url = include.path -%}
+{%- endif -%}

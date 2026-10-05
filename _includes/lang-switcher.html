@@ -20,11 +20,7 @@
   <nav class="lang__menu" aria-label="{{ t.language_label }}">
     <ul>
       {%- for l in page_locales %}
-        {%- if locale_base -%}
-          {%- assign locale_url = locale_base | append: l.code | append: '/' -%}
-        {%- else -%}
-          {%- assign locale_url = l.path -%}
-        {%- endif %}
+        {%- include locale-url.html code=l.code path=l.path %}
       <li>
         <a href="{{ locale_url | relative_url }}" hreflang="{{ l.code }}" lang="{{ l.code }}"
            {%- if l.code == page.locale %} aria-current="true"{% endif %}>{{ l.name }}</a>

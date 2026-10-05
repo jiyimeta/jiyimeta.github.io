@@ -1,0 +1,9 @@
+{%- comment -%}
+  Sets `folino_home_url` to folino's home page in `include.code`: /folino/ for English, /folino/<code>/ for
+  the rest (see locale-url.html for why).
+{%- endcomment -%}
+{%- if include.code == 'en' -%}
+  {%- assign folino_home_url = '/folino/' -%}
+{%- else -%}
+  {%- assign folino_home_url = '/folino/' | append: include.code | append: '/' -%}
+{%- endif -%}

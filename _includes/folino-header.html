@@ -4,7 +4,8 @@
   Harmolo itself is one link away in the footer.
 {%- endcomment -%}
 {%- assign fh = site.data.folino_home[page.locale] -%}
-{%- assign folino_home_url = '/folino/' | append: page.locale | append: '/' | relative_url -%}
+{%- include folino-home-url.html code=page.locale -%}
+{%- assign folino_home_url = folino_home_url | relative_url -%}
 {%- assign folino_faq_url = '/folino/faq/' | append: page.locale | append: '/' | relative_url -%}
 <header class="site-header">
   <div class="fol-container fol-header__inner">

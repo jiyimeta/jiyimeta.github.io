@@ -10,7 +10,7 @@
 #
 # The privacy policy (/folino/privacy-policy/) is not one of these pages; it is
 # published in every site locale.
-locales: [ja]
+locales: [en, ja, ko, zh-Hans, zh-Hant]
 
 # The App Store id, for the Smart App Banner Safari shows above these pages.
 app_store_id: 6766994527

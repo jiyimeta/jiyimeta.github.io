@@ -44,6 +44,13 @@
   }
 }
 
+/* Korean is written with spaces between words, and a line breaks at those spaces;
+   the default breaks between any two syllables, so 악기를 can end up as 악기 / 를. */
+html:lang(ko) body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 .fol-container {
   width: 100%;
   max-width: var(--fol-wide);
