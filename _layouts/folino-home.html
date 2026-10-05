@@ -1,0 +1,186 @@
+---
+layout: base
+---
+{%- comment -%}
+  folino's home page. The section order follows the App Store description - practice, annotate, edit, sync,
+  formats, price - so the page and the store listing say the same things in the same order. Words come from
+  _data/folino_home.yml; the FAQ excerpt is the `featured` entries of _data/folino_faq.yml.
+{%- endcomment -%}
+{%- comment -%} This layout renders before base.html, so it assigns the same `t` base.html does. {%- endcomment -%}
+{%- assign t = site.data.i18n[page.locale] -%}
+{%- assign fh = site.data.folino_home[page.locale] -%}
+{%- assign folino_faq_url = '/folino/faq/' | append: page.locale | append: '/' | relative_url -%}
+
+<section class="fol-hero">
+  <div class="fol-container">
+    <img class="fol-hero__icon" src="{{ '/icons/folino.webp' | relative_url }}" width="88" height="88" alt="">
+    <h1 class="fol-hero__title">{{ fh.hero.title }}</h1>
+    <p class="fol-hero__lead">{{ fh.hero.lead }}</p>
+    {%- include folino-badges.html %}
+    <p class="fol-hero__note">{{ fh.hero.note }}</p>
+
+    <div class="fol-hero__devices">
+      {%- include folino-screen.html shot='reader-ipad' device='ipad' eager=true %}
+      {%- include folino-screen.html shot='reader-iphone' device='iphone' eager=true %}
+    </div>
+  </div>
+</section>
+
+<section class="fol-section" id="features">
+  <div class="fol-container fol-feature">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.practice.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.practice.title }}</h2>
+      <p class="fol-body">{{ fh.practice.body }}</p>
+      <ul class="fol-points">
+        {%- for point in fh.practice.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div class="fol-feature__media">
+      {%- include folino-screen.html shot='playback-ipad' device='ipad' %}
+    </div>
+  </div>
+</section>
+
+<section class="fol-section fol-section--band" id="annotate">
+  <div class="fol-container fol-feature fol-feature--reverse">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.annotate.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.annotate.title }}</h2>
+      <p class="fol-body">{{ fh.annotate.body }}</p>
+      <ul class="fol-points">
+        {%- for point in fh.annotate.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div class="fol-feature__media">
+      {%- include folino-screen.html shot='annotation-ipad' device='ipad' %}
+    </div>
+  </div>
+</section>
+
+<section class="fol-section" id="edit">
+  <div class="fol-container fol-feature">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.edit.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.edit.title }}</h2>
+      <p class="fol-body">{{ fh.edit.body }}</p>
+      <div class="fol-aside">
+        <h3 class="fol-aside__title">{{ fh.edit.mac_title }}</h3>
+        <p class="fol-aside__body">{{ fh.edit.mac_body }}</p>
+      </div>
+    </div>
+    <div class="fol-feature__media">
+      {%- include folino-screen.html shot='editing-ipad' device='ipad' %}
+    </div>
+  </div>
+</section>
+
+<section class="fol-section fol-section--band" id="sync">
+  <div class="fol-container fol-feature fol-feature--reverse">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.sync.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.sync.title }}</h2>
+      <p class="fol-body">{{ fh.sync.body }}</p>
+      <ul class="fol-points">
+        {%- for point in fh.sync.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+      <p class="fol-note">{{ fh.sync.note }}</p>
+    </div>
+    <div class="fol-feature__media fol-duo">
+      {%- include folino-screen.html shot='score-mac' device='mac' %}
+      {%- include folino-screen.html shot='group-iphone' device='iphone' %}
+    </div>
+  </div>
+</section>
+
+<section class="fol-section" id="formats">
+  <div class="fol-container fol-feature">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.formats.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.formats.title }}</h2>
+      <div class="fol-formats">
+        <div>
+          <p class="fol-formats__label">{{ fh.formats.import_label }}</p>
+          <ul class="fol-chips">
+            {%- for item in fh.formats.import %}
+            <li>{{ item }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div>
+          <p class="fol-formats__label">{{ fh.formats.export_label }}</p>
+          <ul class="fol-chips">
+            {%- for item in fh.formats.export %}
+            <li>{{ item }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+      <p class="fol-body">{{ fh.formats.body }}</p>
+      <p class="fol-note">{{ fh.formats.folino_note }}</p>
+    </div>
+    <div class="fol-feature__media">
+      {%- include folino-screen.html shot='library-ipad' device='ipad' %}
+    </div>
+  </div>
+</section>
+
+<section class="fol-section fol-section--band" id="pricing">
+  <div class="fol-container fol-center">
+    <p class="fol-eyebrow">{{ fh.pricing.eyebrow }}</p>
+    <h2 class="fol-title">{{ fh.pricing.title }}</h2>
+
+    <div class="fol-plans">
+      <div class="fol-plan">
+        <h3 class="fol-plan__name">{{ fh.pricing.free_name }}</h3>
+        <ul class="fol-points">
+          {%- for point in fh.pricing.free_points %}
+          <li>{{ point }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="fol-plan">
+        <h3 class="fol-plan__name">{{ fh.pricing.paid_name }}</h3>
+        <p class="fol-plan__body">{{ fh.pricing.paid_body }}</p>
+        <p class="fol-plan__body">{{ fh.pricing.paid_note }}</p>
+      </div>
+    </div>
+    <p class="fol-note">{{ fh.pricing.note }}</p>
+  </div>
+</section>
+
+<section class="fol-section" id="faq">
+  <div class="fol-container fol-faq">
+    <h2 class="fol-title fol-center">{{ fh.faq.title }}</h2>
+
+    <div class="fol-faq__list">
+      {%- assign featured = site.data.folino_faq.entries | where: 'featured', true %}
+      {%- for entry in featured %}
+      {%- assign text = entry[page.locale] %}
+      {%- if text %}
+      <details class="fol-faq__item">
+        <summary>{{ text.q }}</summary>
+        <div class="fol-faq__answer">{{ text.a | markdownify }}</div>
+      </details>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+
+    <p class="fol-faq__more"><a href="{{ folino_faq_url }}">{{ fh.faq.more }}</a></p>
+  </div>
+</section>
+
+<section class="fol-section fol-download" id="download">
+  <div class="fol-container">
+    <img class="fol-hero__icon" src="{{ '/icons/folino.webp' | relative_url }}" width="72" height="72" alt="" loading="lazy">
+    <h2 class="fol-title">{{ fh.download.title }}</h2>
+    {%- include folino-badges.html %}
+    <p class="fol-hero__note">{{ fh.download.note }}</p>
+  </div>
+</section>

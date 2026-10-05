@@ -1,0 +1,152 @@
+# folino's FAQ: the full list on /folino/faq/<locale>/ (_layouts/folino-faq.html),
+# and the entries marked `featured` on the home page as well. One list feeds both,
+# so a question is written - and translated - once.
+#
+# `id` is the question's anchor on the FAQ page (/folino/faq/ja/#sign-in). The app
+# links to these, so an id is a published URL: never rename or reuse one, and
+# never derive it from the question text, which changes with translation and
+# rewording. An entry without text for a locale is skipped on that locale's pages.
+#
+# Answers are Markdown. Links inside them point at the same locale's pages.
+
+categories:
+  - id: basics
+    ja: はじめに
+  - id: files
+    ja: 楽譜ファイル
+  - id: practice
+    ja: 練習と編集
+  - id: sharing
+    ja: 同期と共有グループ
+  - id: account
+    ja: 料金とデータ
+
+entries:
+  - id: sign-in
+    category: basics
+    featured: true
+    ja:
+      q: サインインしないと使えませんか？
+      a: |
+        いいえ。楽譜の閲覧、再生、書き込み、編集、取り込みと書き出しは、サインインしなくても使えます。サインインが必要なのは、自分のほかの端末との同期と、共有グループだけです。
+
+        サインインには、Appleでサインイン、Googleでサインイン、メールアドレスに届くサインイン用リンクのいずれかを使えます。
+
+  - id: price
+    category: basics
+    featured: true
+    ja:
+      q: 料金はかかりますか？
+      a: |
+        閲覧、再生、書き込み、編集は無料です。同期と共有グループも無料で試せます。
+
+        同期する楽譜の数や、グループの数と人数を増やしたいときは、月額または年額の自動更新サブスクリプション「folino plus」「folino pro」をご利用ください。それぞれの上限と価格は、アプリのプランの画面で確認できます。
+
+        プランが必要になるのはグループを作る側だけです。招待されたメンバーは、プランなしで参加して、楽譜を開いたり書き込んだりできます。
+
+  - id: devices
+    category: basics
+    featured: true
+    ja:
+      q: どの端末で使えますか？
+      a: |
+        iPhoneとiPad（iOS 18以降）、Mac（macOS 15以降）、Android（Android 9以降）で使えます。同じアカウントでサインインすれば、端末の種類をまたいで楽譜を同期できます。
+
+  - id: file-formats
+    category: files
+    featured: true
+    ja:
+      q: どんな楽譜ファイルを開けますか？
+      a: |
+        MuseScore（.mscz、.mscx）、MusicXML（.musicxml、.mxl）、MIDI、PDFを読み込めます。
+
+        書き出しは、MuseScore形式、PDF、MIDI、オーディオ（.m4a）、.folinoファイルに対応しています。iPhone、iPad、Macでは、書き込みを入れたままのPDFも書き出せます。
+
+  - id: musescore
+    category: files
+    ja:
+      q: MuseScoreで作った楽譜を使えますか？
+      a: |
+        はい。MuseScoreの.msczと.mscxをそのまま読み込めて、MuseScore形式で書き出すこともできます。Macでは、音符の入力もMuseScoreと同じキー操作でできます。
+
+  - id: pdf
+    category: files
+    ja:
+      q: PDFの楽譜も再生できますか？
+      a: |
+        はい。PDFの楽譜は、取り込むときに解析して楽譜データに変換します。変換したあとは、再生や移調、パートの表示切り替え、音符の編集まで、ほかの形式の楽譜と同じように使えます。元のPDFの表示に切り替えることもできます。
+
+        iPhone、iPad、Macでは、紙の楽譜をスキャンしたPDFも変換できます。Androidで変換できるのは、MuseScoreやfolinoから書き出したPDFのような、楽譜作成ソフトで作られたPDFです。
+
+        読み取りの精度は楽譜の状態によって変わります。読み違えた音符は、編集で直してください。
+
+  - id: offline
+    category: practice
+    ja:
+      q: インターネットにつながっていなくても使えますか？
+      a: |
+        はい。取り込んだ楽譜は端末に保存されるので、インターネットにつながっていなくても開いて、再生や書き込みができます。共有グループの楽譜も端末にまるごとダウンロードされるので、電波の届かない練習場所や本番の会場でも開けます。
+
+        同期と共有グループの内容のやり取りには、インターネット接続が必要です。
+
+  - id: small-screen
+    category: practice
+    ja:
+      q: iPhoneの画面でも楽譜を読めますか？
+      a: |
+        縦スクロール、横スクロール、ページ表示を切り替えられます。使わないパートを隠せば、iPhoneの画面でも自分のパートに集中して読めます。
+
+  - id: keyboard
+    category: practice
+    ja:
+      q: キーボードで操作できますか？
+      a: |
+        はい。Macでは、すべての編集コマンドにキーボードショートカットを割り当てられます。「設定」>「ショートカット」で全コマンドを一覧でき、名前やキーで検索して変更できます。iPadでも外付けキーボードで操作できます。
+
+  - id: engraving
+    category: practice
+    ja:
+      q: 出版用の楽譜づくり（浄書）にも使えますか？
+      a: |
+        folinoは、楽譜を読んで、聴いて、練習するためのアプリです。音符の修正や練習用の楽譜づくりはできますが、パート譜の作成やページレイアウトの細かい調整のような、出版向けの機能はありません。浄書にはMuseScoreなどの専用ソフトをおすすめします。
+
+  - id: sync
+    category: sharing
+    ja:
+      q: 自分のほかの端末と楽譜を同期するには？
+      a: |
+        それぞれの端末で、同じアカウントでfolinoにサインインしてください。楽譜は書き込みや編集も含めて同期されます。同期は設定からいつでもオフにできます。
+
+  - id: groups
+    category: sharing
+    ja:
+      q: 共有グループとは何ですか？
+      a: |
+        合唱団やバンドのメンバーと楽譜を共有するための、招待制のグループです。グループに追加した楽譜は、音符の修正も含めてメンバー全員に届きます。書き込みは、メンバーと共有するか、自分だけのメモにするかを選べます。
+
+  - id: join-group
+    category: sharing
+    ja:
+      q: 招待されたグループに参加するには？
+      a: |
+        届いた招待リンクを、folinoをインストールした端末で開いてください。参加の確認が表示されます。Macでは、メニューの「招待リンクで参加…」にリンクを貼り付けても参加できます。
+
+        グループへの参加にはサインインが必要です。
+
+  - id: data
+    category: account
+    ja:
+      q: 楽譜はどこに保存されますか？
+      a: |
+        サインインしない限り、楽譜や書き込みは端末の中だけに保存され、外に送られることはありません。サインインして同期をオンにすると、楽譜と書き込みは同期のためにクラウドに保存されます。
+
+        詳しくは[プライバシーポリシー](/folino/privacy-policy/ja/)をご覧ください。
+
+  - id: cancel
+    category: account
+    ja:
+      q: サブスクリプションを解約するには？
+      a: |
+        iPhone、iPad、Macで購入した場合はApple Accountの設定から、Androidで購入した場合はGoogle Playの定期購入の画面から、いつでも解約できます。
+
+        解約しても、それまでの楽譜や書き込みは消えず、そのまま開いて編集できます。同期する楽譜を増やすことや、グループを広げることが止まるだけです。

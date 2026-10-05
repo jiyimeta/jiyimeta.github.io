@@ -56,19 +56,34 @@
 </script>
 {%- endif %}
 
+{%- assign page_description = t.tagline -%}
 {%- if page.kind == 'privacy' -%}
   {%- assign page_title = t.privacy_link | append: ' | ' | append: site.title -%}
 {%- elsif page.kind == 'folino-privacy' -%}
   {%- assign page_title = 'folino ' | append: t.privacy_link | append: ' | ' | append: site.title -%}
+{%- elsif page.kind == 'folino-home' -%}
+  {%- assign page_title = site.data.folino_home[page.locale].title -%}
+  {%- assign page_description = site.data.folino_home[page.locale].description -%}
+{%- elsif page.kind == 'folino-faq' -%}
+  {%- assign page_title = site.data.folino_home[page.locale].nav.faq | append: ' | folino' -%}
+  {%- assign page_description = site.data.folino_home[page.locale].description -%}
 {%- else -%}
   {%- assign page_title = site.title -%}
 {%- endif -%}
 <title>{{ page_title }}</title>
-<meta name="description" content="{{ t.tagline }}">
+<meta name="description" content="{{ page_description }}">
+
+{%- comment -%}
+  Safari's Smart App Banner: "Open" when folino is installed, "Get" when it is not. It needs no domain
+  association, and one app per page, so it is on folino's own pages only.
+{%- endcomment -%}
+{%- if folino_page %}
+<meta name="apple-itunes-app" content="app-id={{ site.data.folino.app_store_id }}">
+{%- endif %}
 
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-{%- for l in site.data.locales %}
+{%- for l in page_locales %}
   {%- if locale_base -%}
     {%- assign alt_url = locale_base | append: l.code | append: '/' -%}
   {%- else -%}
@@ -77,17 +92,22 @@
 <link rel="alternate" hreflang="{{ l.code }}" href="{{ alt_url | absolute_url }}">
 {%- endfor %}
 {%- if locale_base %}
-<link rel="alternate" hreflang="x-default" href="{{ locale_base | append: 'en/' | absolute_url }}">
+  {%- comment -%} English is the default where the page has it; until then, the first language it has. {%- endcomment -%}
+  {%- assign default_locale = page_locales | where: 'code', 'en' | first | default: page_locales.first %}
+<link rel="alternate" hreflang="x-default" href="{{ locale_base | append: default_locale.code | append: '/' | absolute_url }}">
 {%- else %}
 <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
 {%- endif %}
 
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page_title }}">
-<meta property="og:description" content="{{ t.tagline }}">
+<meta property="og:description" content="{{ page_description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+{%- if folino_page %}
+<link rel="stylesheet" href="{{ '/assets/css/folino.css' | relative_url }}">
+{%- endif %}

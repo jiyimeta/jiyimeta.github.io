@@ -1,0 +1,21 @@
+# folino's own pages: its home page under /folino/<locale>/ and its FAQ under
+# /folino/faq/<locale>/. Their copy lives in folino_home.yml and folino_faq.yml.
+#
+# `locales` lists the languages these pages are published in, in switcher order.
+# It follows the app, not the site: a language is added here only once the app
+# ships in it and both pages have been translated - the five the app supports are
+# en, ja, ko, zh-Hans and zh-Hant. The language switcher, the hreflang alternates
+# and the footer all read this list, so a language that is not here is never
+# linked to.
+#
+# The privacy policy (/folino/privacy-policy/) is not one of these pages; it is
+# published in every site locale.
+locales: [ja]
+
+# The App Store id, for the Smart App Banner Safari shows above these pages.
+app_store_id: 6766994527
+
+# Store links, rewritten per locale with _data/stores.yml like the home page's.
+links:
+  ios: https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527
+  android: https://play.google.com/store/apps/details?id=com.harmolo.folino

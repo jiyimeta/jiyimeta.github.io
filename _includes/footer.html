@@ -6,7 +6,20 @@
     </p>
 
     <p class="site-footer__links">
-      {%- if locale_base %}
+      {%- if folino_page %}
+      {%- comment -%}
+        folino's pages link to each other and to folino's own policy, then out to Harmolo; the privacy policy is
+        published in every site locale, so the link never dangles.
+      {%- endcomment %}
+      {%- assign fh = site.data.folino_home[page.locale] %}
+      {%- if page.kind == 'folino-faq' %}
+      <a href="{{ '/folino/' | append: page.locale | append: '/' | relative_url }}">folino</a> ·
+      {%- else %}
+      <a href="{{ '/folino/faq/' | append: page.locale | append: '/' | relative_url }}">{{ fh.nav.faq }}</a> ·
+      {%- endif %}
+      <a href="{{ '/folino/privacy-policy/' | append: page.locale | append: '/' | relative_url }}">{{ t.privacy_link }}</a> ·
+      <a href="{{ current_locale.path | relative_url }}">Harmolo</a>
+      {%- elsif locale_base %}
       <a href="{{ current_locale.path | relative_url }}">{{ t.back_to_home }}</a>
       {%- else %}
       <a href="{{ '/privacy-policy/' | append: page.locale | append: '/' | relative_url }}">{{ t.privacy_link }}</a>
