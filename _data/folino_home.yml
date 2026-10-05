@@ -2,6 +2,9 @@
 # _data/folino.yml. The page's structure - which sections exist, in what order,
 # and which screenshots they show - lives in the layout; only words live here.
 #
+# MuseScore is named only where file formats are listed, here and in the FAQ;
+# the page does not talk about MuseScore the app.
+#
 # Headings may carry <wbr> where a line may break. folino.css keeps Japanese and
 # Chinese headings from breaking inside a word, so in those languages <wbr> and
 # punctuation are the only places a heading can wrap outside Chrome.
@@ -13,7 +16,7 @@
 
 ja:
   title: folino (フォリノ) - 楽譜の編集と再生
-  description: MuseScore、MusicXML、PDFの楽譜を開いて、パートごとにソロやミュートで聴ける楽譜アプリ。書き込みや音符の修正は、合唱団やバンドのメンバーの楽譜にすぐ届きます。iPhone、iPad、Mac、Androidに対応。
+  description: 手持ちの楽譜ファイルやPDFを開いて、パートごとにソロやミュートで聴ける楽譜アプリ。書き込みや音符の修正は、合唱団やバンドのメンバーの楽譜にすぐ届きます。iPhone、iPad、Mac、Androidに対応。
 
   nav:
     features: 機能
@@ -23,7 +26,7 @@ ja:
 
   hero:
     title: 自分のパートだけを<wbr>聴いて、<wbr>音を取る
-    lead: MuseScoreやMusicXML、PDFの楽譜を開けば、パートごとにソロ、ミュート、音量調整ができます。書き込みや音符の修正は、合唱団やバンドのメンバーの楽譜にすぐ届きます。
+    lead: 手持ちの楽譜ファイルやPDFを開けば、パートごとにソロ、ミュート、音量調整ができます。書き込みや音符の修正は、合唱団やバンドのメンバーの楽譜にすぐ届きます。
     note: iPhone、iPad、Mac、Android対応。閲覧・再生・書き込み・編集は無料です。
 
   practice:
@@ -42,14 +45,14 @@ ja:
     body: Apple Pencilや指で、指づかいや練習のメモを楽譜に直接書けます。表示倍率を変えたり、縦スクロールとページ表示を切り替えたりして譜面の並びが変わっても、書いた印は音符の位置についてきます。
     points:
       - 書き込みは楽譜と一緒に自動で保存
-      - iPhone、iPad、Macでは、書き込みを入れたままPDFにして共有
+      - 書き込みを入れたまま、PDFにして共有
       - Macではマウスやトラックパッドで書き込み
 
   edit:
     eyebrow: 編集・作成
     title: 間違った音符は、その場で直す
     body: 取り込んだ楽譜に誤りがあっても、別のアプリに戻らずに直せます。音符の入力と削除、音高の変更、和音、タイ、連符、リハーサルマークに対応し、ドラム譜も入力できます。新しい楽譜を一から作ることもできます。
-    mac_title: Macでは、MuseScoreと同じキー操作で
+    mac_title: Macでは、キーボードだけで音符を入力
     mac_body: アルファベットで音名、数字で音価を入力します。編集コマンドにはすべてキーボードショートカットを割り当てられ、「設定」>「ショートカット」の一覧から検索して変更できます。
 
   sync:
@@ -92,10 +95,12 @@ ja:
       - 取り込みと書き出し
       - 招待されたグループへの参加
       - 同期と共有グループのお試し
-    paid_name: folino plus / folino pro
     paid_body: 同期する楽譜の数と、作れるグループの数や人数が増えます。月額と年額の自動更新サブスクリプションです。
     paid_note: プランが必要になるのはグループを作る側だけです。招待されたメンバーは、プランなしで参加して、楽譜を開いたり書き込んだりできます。
-    note: プランはfolinoアカウントに紐づくので、購入したプランはサインインしたすべての端末で使えます。それぞれの上限と価格は、アプリのプランの画面で確認できます。
+    # One sentence per line on the page.
+    notes:
+      - プランはfolinoアカウントに紐づくので、購入したプランはサインインしたすべての端末で使えます。
+      - それぞれの上限と価格は、アプリのプランの画面で確認できます。
 
   faq:
     title: よくある質問

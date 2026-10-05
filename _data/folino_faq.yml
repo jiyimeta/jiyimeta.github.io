@@ -60,7 +60,7 @@ entries:
       a: |
         MuseScore（.mscz、.mscx）、MusicXML（.musicxml、.mxl）、MIDI、PDFを読み込めます。
 
-        書き出しは、MuseScore形式、PDF、MIDI、オーディオ（.m4a）、.folinoファイルに対応しています。iPhone、iPad、Macでは、書き込みを入れたままのPDFも書き出せます。
+        書き出しは、MuseScore形式、PDF、MIDI、オーディオ（.m4a）、.folinoファイルに対応しています。PDFは、書き込みを入れたままでも書き出せます。
 
   - id: musescore
     category: files
@@ -103,12 +103,14 @@ entries:
       a: |
         はい。Macでは、すべての編集コマンドにキーボードショートカットを割り当てられます。「設定」>「ショートカット」で全コマンドを一覧でき、名前やキーで検索して変更できます。iPadでも外付けキーボードで操作できます。
 
-  - id: engraving
+  - id: create-score
     category: practice
     ja:
-      q: 出版用の楽譜づくり（浄書）にも使えますか？
+      q: 楽譜を一から作れますか？
       a: |
-        folinoは、楽譜を読んで、聴いて、練習するためのアプリです。音符の修正や練習用の楽譜づくりはできますが、パート譜の作成やページレイアウトの細かい調整のような、出版向けの機能はありません。浄書にはMuseScoreなどの専用ソフトをおすすめします。
+        はい。編成を選んで、調、拍子、テンポを決めれば、新しい楽譜を作れます。作ったあとでパートを足したり、曲の途中で調や拍子を変えたりもできます。
+
+        楽譜の作成は無料で、作れる数にも制限はありません。
 
   - id: sync
     category: sharing

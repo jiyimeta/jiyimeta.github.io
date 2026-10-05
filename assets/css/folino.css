@@ -201,16 +201,21 @@
   background: var(--bg);
 }
 
+/* Corner radii scale with the displayed width, so a phone drawn small is not
+   rounder than one drawn large. Percentages on border-radius are taken from the
+   width horizontally and the height vertically, so each pair is the same length
+   divided by the device's aspect ratio: iPhone 440x956 pt (2.17), iPad 1032x1376
+   (1.33), Mac window 1440x900 (0.625). */
 .fol-screen--ipad {
-  border-radius: 22px;
+  border-radius: 3.6% / 2.7%;
 }
 
 .fol-screen--iphone {
-  border-radius: 34px;
+  border-radius: 12.5% / 5.75%;
 }
 
 .fol-screen--mac {
-  border-radius: 12px;
+  border-radius: 1.2% / 1.92%;
 }
 
 /* -------------------------------------------------------------- features */
@@ -414,6 +419,26 @@
   margin-top: 16px;
 }
 
+.fol-plan__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+}
+
+/* The logo's f descends well below the word, so the word itself reads at about
+   half this height. */
+.fol-plan__logos img {
+  display: block;
+  height: 34px;
+  width: auto;
+}
+
+/* A note written one sentence per line. */
+.fol-note--lines span {
+  display: block;
+}
+
 .fol-plan__body {
   margin: 16px 0 0;
   line-height: 1.75;
@@ -604,14 +629,6 @@
   .fol-formats,
   .fol-plans {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .fol-screen--ipad {
-    border-radius: 14px;
-  }
-
-  .fol-screen--iphone {
-    border-radius: 20px;
   }
 }
 

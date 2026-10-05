@@ -146,12 +146,26 @@ layout: base
         </ul>
       </div>
       <div class="fol-plan">
-        <h3 class="fol-plan__name">{{ fh.pricing.paid_name }}</h3>
+        {%- comment -%} The plans' own logos, as the app's plan screen shows them (SharingAssets PlanLogoPlus / PlanLogoPro). {%- endcomment %}
+        <h3 class="fol-plan__name fol-plan__logos">
+          <picture>
+            <source srcset="{{ '/folino/images/plan-plus-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ '/folino/images/plan-plus.png' | relative_url }}" width="404" height="120" alt="folino plus">
+          </picture>
+          <picture>
+            <source srcset="{{ '/folino/images/plan-pro-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ '/folino/images/plan-pro.png' | relative_url }}" width="373" height="120" alt="folino pro">
+          </picture>
+        </h3>
         <p class="fol-plan__body">{{ fh.pricing.paid_body }}</p>
         <p class="fol-plan__body">{{ fh.pricing.paid_note }}</p>
       </div>
     </div>
-    <p class="fol-note">{{ fh.pricing.note }}</p>
+    <p class="fol-note fol-note--lines">
+      {%- for line in fh.pricing.notes %}
+      <span>{{ line }}</span>
+      {%- endfor %}
+    </p>
   </div>
 </section>
 
