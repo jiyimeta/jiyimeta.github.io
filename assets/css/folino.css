@@ -150,9 +150,23 @@ html:lang(ko) body {
   line-height: 1.2;
 }
 
+.fol-hero__subtitle {
+  margin: 20px auto 0;
+  font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* The lead is set like the headings: breaks only after punctuation and at the
+   copy's <wbr>, so a Japanese or Chinese line never ends inside a word. */
 .fol-hero__lead {
   margin: 22px auto 0;
-  max-width: 36em;
+  max-width: 46em;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
   font-size: clamp(1rem, 2vw, 1.18rem);
   line-height: 1.75;
   color: var(--muted);
@@ -441,8 +455,8 @@ html:lang(ko) body {
   width: auto;
 }
 
-/* A note written one sentence per line. */
-.fol-note--lines span {
+/* Text written one sentence per line. */
+.fol-lines span {
   display: block;
 }
 

@@ -5,9 +5,14 @@
 # MuseScore is named only where file formats are listed, here and in the FAQ;
 # the page does not talk about MuseScore the app.
 #
-# Headings may carry <wbr> where a line may break. folino.css keeps Japanese and
-# Chinese headings from breaking inside a word, so in those languages <wbr> and
-# punctuation are the only places a heading can wrap outside Chrome.
+# Headings end without a full stop, even where the App Store screenshots' copy has
+# one; the hero title is the exception, its stops separating the verbs. A comma
+# stays only where the sentence reads better with it, never to make a line look
+# like a headline.
+#
+# folino.css keeps Japanese and Chinese headings and the hero lead from breaking
+# inside a word, so they wrap only after punctuation. The lead's lines are long
+# and carry <wbr> where a line may break; headings are kept short instead.
 #
 # The plan limits are deliberately not quoted: the app reads them from Remote
 # Config (TierLimitsCatalog), so any number written here could go stale without a
@@ -16,7 +21,7 @@
 
 ja:
   title: folino (フォリノ) - 楽譜の編集と再生
-  description: 手持ちの楽譜ファイルやPDFを開いて、パートごとにソロやミュートで聴ける楽譜アプリ。書き込みや音符の修正は、合唱団やバンドのメンバーの楽譜にすぐ届きます。iPhone、iPad、Mac、Androidに対応。
+  description: 楽譜を、読む。聴く。書き換える。MuseScore・MusicXML・MIDI・PDFの楽譜を開いて、パートごとに音量を調整して聴けます。書き込みも編集も、バンド全員の楽譜にすぐ届きます。iPhone、iPad、Mac、Androidに対応。
 
   nav:
     features: 機能
@@ -24,14 +29,20 @@ ja:
     faq: よくある質問
     download: ダウンロード
 
+  # The title and subtitle are the App Store screenshots' copy.
   hero:
-    title: 自分のパートだけを<wbr>聴いて、<wbr>音を取る
-    lead: 手持ちの楽譜ファイルやPDFを開けば、パートごとにソロ、ミュート、音量調整ができます。書き込みや音符の修正は、合唱団やバンドのメンバーの楽譜にすぐ届きます。
-    note: iPhone、iPad、Mac、Android対応。閲覧・再生・書き込み・編集は無料です。
+    title: 楽譜を、<br>読む。聴く。書き換える。
+    subtitle: バンド全員でひとつの楽譜を
+    lead_lines:
+      - MuseScore・MusicXML・MIDI・PDFの楽譜を<wbr>開けば、<wbr>パートごとに<wbr>音量を調整して<wbr>聴けます。
+      - 書き込みも<wbr>編集も、<wbr>メンバーの楽譜に<wbr>すぐ届きます。
+    notes:
+      - iPhone、iPad、Mac、Android対応。
+      - 閲覧・再生・書き込み・編集は無料です。
 
   practice:
     eyebrow: パート練習
-    title: 聴きたいパートだけを<wbr>鳴らす
+    title: 聴きたいパートだけを鳴らす
     body: パートごとに音量を変えたり、ミュートやソロにしたり、楽器を差し替えたりできます。パートごとの練習音源を1つずつ書き出して配る必要は、もうありません。
     points:
       - A-Bリピートで、難しいフレーズを繰り返し練習
@@ -41,7 +52,7 @@ ja:
 
   annotate:
     eyebrow: 書き込み
-    title: 強弱もブレスも、楽譜に書き込む
+    title: メモを楽譜に書き込む
     body: Apple Pencilや指で、指づかいや練習のメモを楽譜に直接書けます。表示倍率を変えたり、縦スクロールとページ表示を切り替えたりして譜面の並びが変わっても、書いた印は音符の位置についてきます。
     points:
       - 書き込みは楽譜と一緒に自動で保存
@@ -50,14 +61,14 @@ ja:
 
   edit:
     eyebrow: 編集・作成
-    title: 間違った音符は、その場で直す
+    title: 音符をその場で直す
     body: 取り込んだ楽譜に誤りがあっても、別のアプリに戻らずに直せます。音符の入力と削除、音高の変更、和音、タイ、連符、リハーサルマークに対応し、ドラム譜も入力できます。新しい楽譜を一から作ることもできます。
-    mac_title: Macでは、キーボードだけで音符を入力
+    mac_title: Macではキーボードだけで音符を入力
     mac_body: アルファベットで音名、数字で音価を入力します。編集コマンドにはすべてキーボードショートカットを割り当てられ、「設定」>「ショートカット」の一覧から検索して変更できます。
 
   sync:
     eyebrow: 同期と共有グループ
-    title: 書き込みも修正も、<wbr>メンバー全員の楽譜に
+    title: 書き込みも修正も、メンバー全員の楽譜に
     body: サインインすると、楽譜は書き込みや編集も含めて自分のほかの端末と同期されます。共有グループを作れば、合唱団やバンドのメンバーとも同じ楽譜を使えます。書き込みや音符の修正は、すぐに全員の楽譜に反映されます。
     points:
       - Macで直した楽譜を、iPadで開いて書き込む
@@ -67,7 +78,7 @@ ja:
 
   formats:
     eyebrow: 取り込みと書き出し
-    title: 手元の楽譜を、そのまま開く
+    title: 手元の楽譜をそのまま開く
     body: iPhone、iPad、Macでは、スキャンしたPDFの楽譜も取り込むときに解析して楽譜データに変換します。再生や移調、パートの表示切り替えまで、ほかの形式と同じように使えます。元のPDFの表示に切り替えることもできます。
     import_label: 読み込み
     import:
@@ -86,7 +97,7 @@ ja:
 
   pricing:
     eyebrow: 料金
-    title: 楽譜を使う機能は、すべて無料
+    title: 楽譜を使う機能はすべて無料
     free_name: 無料
     free_points:
       - 楽譜の閲覧と再生
@@ -107,7 +118,7 @@ ja:
     more: すべての質問を見る
 
   download:
-    title: folinoを無料で<wbr>ダウンロード
+    title: folinoを無料でダウンロード
     note: iPhone、iPad、MacはApp Storeから、AndroidはGoogle Playから。
 
   # The FAQ page's own words; its questions are in folino_faq.yml.
@@ -130,7 +141,7 @@ ja:
 
 en:
   title: folino - Score Editor & Player
-  description: Open your score files or PDFs and solo, mute, or turn up any part. A sheet music app for choirs and bands, where every mark and note fix reaches the whole group right away. For iPhone, iPad, Mac, and Android.
+  description: Read the score. Hear it. Rewrite it. Open MuseScore, MusicXML, MIDI, or PDF scores and set the volume of each part as you listen; marks and edits reach the whole band right away. For iPhone, iPad, Mac, and Android.
 
   nav:
     features: Features
@@ -139,9 +150,14 @@ en:
     download: Download
 
   hero:
-    title: Solo your part. Learn your notes.
-    lead: Open a score file or a PDF, then solo, mute, or set the volume of each part. Your marks and note fixes reach everyone in your choir or band right away.
-    note: For iPhone, iPad, Mac, and Android. Reading, playback, annotation, and editing are free.
+    title: Read the score. Hear it. Rewrite it.
+    subtitle: One score for the whole band
+    lead_lines:
+      - Open MuseScore, MusicXML, MIDI, or PDF scores and set the volume of each part as you listen.
+      - Marks and edits reach every member's score right away.
+    notes:
+      - For iPhone, iPad, Mac, and Android.
+      - Reading, playback, annotation, and editing are free.
 
   practice:
     eyebrow: Part practice
@@ -155,7 +171,7 @@ en:
 
   annotate:
     eyebrow: Annotation
-    title: Mark dynamics and breaths right on the score
+    title: Write your notes on the score
     body: Write fingerings and rehearsal notes straight onto the score with Apple Pencil or your finger. Change the zoom, or switch between vertical scrolling and pages, and the music reflows; your marks stay with the notes they belong to.
     points:
       - Marks save with the score automatically
@@ -164,14 +180,14 @@ en:
 
   edit:
     eyebrow: Editing and creating
-    title: Fix a wrong note where you find it
+    title: Fix a note on the spot
     body: When an imported score has a mistake, fix it without going back to another app. Enter and delete notes, change pitches, and write chords, ties, tuplets, and rehearsal marks, drum notation included. You can also start a new score from scratch.
     mac_title: On a Mac, enter notes from the keyboard
     mac_body: Type a letter for the pitch and a number for the duration. Every editing command can take a keyboard shortcut, and Settings > Shortcuts lists them all, ready to search and change.
 
   sync:
     eyebrow: Sync and shared groups
-    title: Every mark and fix, on every member's score
+    title: Every mark and fix on every member's score
     body: Sign in, and your scores sync across your devices, annotations and edits included. Create a shared group, and your choir or band works from the same scores, with every mark and note fix showing up on everyone's copy right away.
     points:
       - Fix a score on your Mac, then mark it up on your iPad
@@ -241,7 +257,7 @@ en:
 
 ko:
   title: folino - 악보 편집과 재생
-  description: 가지고 있는 악보 파일이나 PDF를 열어 파트별로 솔로·음소거로 들을 수 있는 악보 앱. 필기와 음표 수정은 합창단이나 밴드 멤버의 악보에 바로 전해집니다. iPhone, iPad, Mac, Android 지원.
+  description: 악보를 읽다. 듣다. 고쳐 쓰다. MuseScore·MusicXML·MIDI·PDF 악보를 열어 파트별로 음량을 조절하며 들을 수 있고, 필기도 편집도 밴드 모두의 악보에 바로 전해집니다. iPhone, iPad, Mac, Android 지원.
 
   nav:
     features: 기능
@@ -250,9 +266,14 @@ ko:
     download: 다운로드
 
   hero:
-    title: 내 파트만 골라 듣고, 음을&nbsp;익히세요
-    lead: 가지고 있는 악보 파일이나 PDF를 열면 파트별로 솔로, 음소거, 음량 조절을 할 수 있습니다. 필기와 음표 수정은 합창단이나 밴드 멤버의 악보에 바로 전해집니다.
-    note: iPhone, iPad, Mac, Android 지원. 보기·재생·필기·편집은 무료입니다.
+    title: 악보를,<br>읽다. 듣다. 고쳐 쓰다.
+    subtitle: 밴드 모두가 하나의 악보로
+    lead_lines:
+      - MuseScore·MusicXML·MIDI·PDF 악보를 열면 파트별로 음량을 조절하며 들을 수 있습니다.
+      - 필기도 편집도 멤버의 악보에 바로 전해집니다.
+    notes:
+      - iPhone, iPad, Mac, Android 지원.
+      - 보기·재생·필기·편집은 무료입니다.
 
   practice:
     eyebrow: 파트 연습
@@ -266,7 +287,7 @@ ko:
 
   annotate:
     eyebrow: 필기
-    title: 셈여림도 브레스도 악보에 직접
+    title: 메모를 악보에 쓰다
     body: Apple Pencil이나 손가락으로 운지와 연습 메모를 악보에 직접 쓸 수 있습니다. 확대 배율을 바꾸거나 세로 스크롤과 페이지 표시를 전환해 악보 배치가 달라져도, 쓴 표시는 음표를 따라갑니다.
     points:
       - 필기는 악보와 함께 자동 저장
@@ -275,7 +296,7 @@ ko:
 
   edit:
     eyebrow: 편집·작성
-    title: 틀린 음표는 그 자리에서 고치기
+    title: 음표를 그 자리에서 고치다
     body: 불러온 악보에 오류가 있어도 다른 앱으로 돌아가지 않고 고칠 수 있습니다. 음표 입력과 삭제, 음높이 변경, 화음, 붙임줄, 잇단음표, 리허설 마크를 지원하며 드럼 악보도 입력할 수 있습니다. 새 악보를 처음부터 만들 수도 있습니다.
     mac_title: Mac에서는 키보드만으로 음표 입력
     mac_body: 알파벳으로 음이름을, 숫자로 음가를 입력합니다. 모든 편집 명령에 키보드 단축키를 지정할 수 있고, '설정' > '단축키' 목록에서 검색해 바꿀 수 있습니다.
@@ -352,7 +373,7 @@ ko:
 
 zh-Hans:
   title: folino - 乐谱编辑与播放
-  description: 打开手头的乐谱文件或 PDF，即可按声部独奏或静音来听。批注和音符修改会立即送达合唱团或乐队每位成员的乐谱。支持 iPhone、iPad、Mac 和 Android。
+  description: 读谱。听谱。改谱。打开 MuseScore、MusicXML、MIDI 或 PDF 乐谱，按声部调整音量来听；批注和编辑会立即送达全团的乐谱。支持 iPhone、iPad、Mac 和 Android。
 
   nav:
     features: 功能
@@ -361,9 +382,14 @@ zh-Hans:
     download: 下载
 
   hero:
-    title: 只听自己的声部，<wbr>轻松学唱
-    lead: 打开手头的乐谱文件或 PDF，就能按声部独奏、静音或调整音量。批注和音符修改会立即送达合唱团或乐队成员的乐谱。
-    note: 支持 iPhone、iPad、Mac、Android。阅读、播放、批注和编辑均免费。
+    title: 读谱。听谱。改谱。
+    subtitle: 全团共用一份乐谱
+    lead_lines:
+      - 打开 MuseScore、MusicXML、MIDI 或 PDF 乐谱，<wbr>就能按声部<wbr>调整音量来听。
+      - 批注和编辑<wbr>都会立即送达<wbr>每位成员的乐谱。
+    notes:
+      - 支持 iPhone、iPad、Mac、Android。
+      - 阅读、播放、批注和编辑均免费。
 
   practice:
     eyebrow: 分声部练习
@@ -377,7 +403,7 @@ zh-Hans:
 
   annotate:
     eyebrow: 批注
-    title: 力度和换气，<wbr>直接写在乐谱上
+    title: 把笔记写在乐谱上
     body: 用 Apple Pencil 或手指，把指法和练习笔记直接写在乐谱上。即使调整缩放、在纵向滚动和翻页显示之间切换让乐谱重新排版，写下的标记也会跟着音符走。
     points:
       - 批注随乐谱自动保存
@@ -386,14 +412,14 @@ zh-Hans:
 
   edit:
     eyebrow: 编辑与创建
-    title: 错的音符，<wbr>当场就改
+    title: 音符当场就改
     body: 导入的乐谱有错误时，无需回到其他 App 就能修改。支持音符的输入与删除、音高更改，和弦、连音线、连音符和排练记号的输入，还可以输入鼓谱。也可以从零开始创建新乐谱。
     mac_title: 在 Mac 上只用键盘输入音符
     mac_body: 用字母输入音名，用数字输入时值。所有编辑命令都可以设置键盘快捷键，并可在“设置”>“快捷键”列表中搜索和修改。
 
   sync:
     eyebrow: 同步与共享群组
-    title: 批注和修改，<wbr>送达每位成员的乐谱
+    title: 批注和修改，送达每位成员的乐谱
     body: 登录后，乐谱连同批注和编辑内容会与你的其他设备同步。创建共享群组后，合唱团或乐队成员可以使用同一份乐谱，批注和音符修改会立即反映到每个人的乐谱上。
     points:
       - Mac 上改好的乐谱，在 iPad 上加批注
@@ -403,7 +429,7 @@ zh-Hans:
 
   formats:
     eyebrow: 导入与导出
-    title: 手头的乐谱，<wbr>直接打开
+    title: 手头的乐谱直接打开
     body: 在 iPhone、iPad 和 Mac 上，扫描的 PDF 乐谱也会在导入时解析并转换为乐谱数据。播放、移调、声部显示切换都能像其他格式一样使用，也可以切换回原始 PDF。
     import_label: 导入
     import:
@@ -422,7 +448,7 @@ zh-Hans:
 
   pricing:
     eyebrow: 价格
-    title: 乐谱相关的功能，<wbr>全部免费
+    title: 乐谱相关功能全部免费
     free_name: 免费
     free_points:
       - 阅读与播放乐谱
@@ -463,7 +489,7 @@ zh-Hans:
 
 zh-Hant:
   title: folino - 樂譜編輯與播放
-  description: 打開手邊的樂譜檔案或 PDF，即可依聲部獨奏或靜音來聽。註記與音符修正會立即送到合唱團或樂團每位成員的樂譜。支援 iPhone、iPad、Mac 與 Android。
+  description: 讀譜。聽譜。改譜。打開 MuseScore、MusicXML、MIDI 或 PDF 樂譜，依聲部調整音量來聽；註記與編輯會立即送到全團的樂譜。支援 iPhone、iPad、Mac 與 Android。
 
   nav:
     features: 功能
@@ -472,9 +498,14 @@ zh-Hant:
     download: 下載
 
   hero:
-    title: 只聽自己的聲部，<wbr>輕鬆學唱
-    lead: 打開手邊的樂譜檔案或 PDF，就能依聲部獨奏、靜音或調整音量。註記與音符修正會立即送到合唱團或樂團成員的樂譜。
-    note: 支援 iPhone、iPad、Mac、Android。閱讀、播放、註記與編輯皆免費。
+    title: 讀譜。聽譜。改譜。
+    subtitle: 全團共用一份樂譜
+    lead_lines:
+      - 打開 MuseScore、MusicXML、MIDI 或 PDF 樂譜，<wbr>就能依聲部<wbr>調整音量來聽。
+      - 註記與編輯<wbr>都會立即送到<wbr>每位成員的樂譜。
+    notes:
+      - 支援 iPhone、iPad、Mac、Android。
+      - 閱讀、播放、註記與編輯皆免費。
 
   practice:
     eyebrow: 分聲部練習
@@ -488,7 +519,7 @@ zh-Hant:
 
   annotate:
     eyebrow: 註記
-    title: 力度與換氣，<wbr>直接寫在樂譜上
+    title: 把筆記寫在樂譜上
     body: 用 Apple Pencil 或手指，把指法與練習筆記直接寫在樂譜上。即使調整縮放、在垂直捲動與翻頁顯示之間切換讓樂譜重新排版，寫下的記號也會跟著音符走。
     points:
       - 註記隨樂譜自動儲存
@@ -497,14 +528,14 @@ zh-Hant:
 
   edit:
     eyebrow: 編輯與建立
-    title: 錯的音符，<wbr>當場就改
+    title: 音符當場就改
     body: 匯入的樂譜有錯誤時，不必回到其他 App 就能修改。支援音符的輸入與刪除、音高變更，和弦、連結線、連音符與排練記號的輸入，還能輸入鼓譜。也可以從頭建立新樂譜。
     mac_title: 在 Mac 上只用鍵盤輸入音符
     mac_body: 用字母輸入音名，用數字輸入時值。所有編輯指令都可以設定鍵盤快速鍵，並可在「設定」>「快速鍵」列表中搜尋與修改。
 
   sync:
     eyebrow: 同步與共享群組
-    title: 註記與修正，<wbr>送到每位成員的樂譜
+    title: 註記與修正，送到每位成員的樂譜
     body: 登入後，樂譜連同註記與編輯內容會與你的其他裝置同步。建立共享群組後，合唱團或樂團成員可以使用同一份樂譜，註記與音符修正會立即反映到每個人的樂譜上。
     points:
       - Mac 上改好的樂譜，在 iPad 上加註記
@@ -514,7 +545,7 @@ zh-Hant:
 
   formats:
     eyebrow: 匯入與匯出
-    title: 手邊的樂譜，<wbr>直接打開
+    title: 手邊的樂譜直接打開
     body: 在 iPhone、iPad 與 Mac 上，掃描的 PDF 樂譜也會在匯入時解析並轉換為樂譜資料。播放、移調、聲部顯示切換都能像其他格式一樣使用，也可以切換回原始 PDF。
     import_label: 匯入
     import:
@@ -533,7 +564,7 @@ zh-Hant:
 
   pricing:
     eyebrow: 價格
-    title: 樂譜相關的功能，<wbr>全部免費
+    title: 樂譜相關功能全部免費
     free_name: 免費
     free_points:
       - 閱讀與播放樂譜

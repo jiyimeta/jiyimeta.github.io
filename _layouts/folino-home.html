@@ -14,10 +14,23 @@ layout: base
 <section class="fol-hero">
   <div class="fol-container">
     <img class="fol-hero__icon" src="{{ '/icons/folino.webp' | relative_url }}" width="88" height="88" alt="">
+    {%- comment -%}
+      The title and the subtitle are the App Store screenshots' first two claims, word for word: what folino
+      does with a score, and that a whole ensemble shares one. The lead backs each with one sentence.
+    {%- endcomment %}
     <h1 class="fol-hero__title">{{ fh.hero.title }}</h1>
-    <p class="fol-hero__lead">{{ fh.hero.lead }}</p>
+    <p class="fol-hero__subtitle">{{ fh.hero.subtitle }}</p>
+    <p class="fol-hero__lead fol-lines">
+      {%- for line in fh.hero.lead_lines %}
+      <span>{{ line }}</span>
+      {%- endfor %}
+    </p>
     {%- include folino-badges.html %}
-    <p class="fol-hero__note">{{ fh.hero.note }}</p>
+    <p class="fol-hero__note fol-lines">
+      {%- for line in fh.hero.notes %}
+      <span>{{ line }}</span>
+      {%- endfor %}
+    </p>
 
     <div class="fol-hero__devices">
       {%- include folino-screen.html shot='reader-ipad' device='ipad' eager=true %}
@@ -161,7 +174,7 @@ layout: base
         <p class="fol-plan__body">{{ fh.pricing.paid_note }}</p>
       </div>
     </div>
-    <p class="fol-note fol-note--lines">
+    <p class="fol-note fol-lines">
       {%- for line in fh.pricing.notes %}
       <span>{{ line }}</span>
       {%- endfor %}
