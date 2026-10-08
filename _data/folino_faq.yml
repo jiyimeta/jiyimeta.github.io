@@ -152,31 +152,31 @@ entries:
     en:
       q: Which score files can I open?
       a: |
-        MuseScore (.mscz, .mscx), MusicXML (.musicxml, .mxl), MIDI, and PDF.
+        MuseScore (.mscz), MusicXML (.musicxml, .mxl), MIDI, PDF, and .folino files.
 
         folino exports to MuseScore format, PDF, MIDI, audio (.m4a), and .folino files. A PDF can include your marks.
     ja:
       q: どんな楽譜ファイルを開けますか？
       a: |
-        MuseScore（.mscz、.mscx）、MusicXML（.musicxml、.mxl）、MIDI、PDFを読み込めます。
+        MuseScore（.mscz）、MusicXML（.musicxml、.mxl）、MIDI、PDF、.folinoファイルを読み込めます。
 
         書き出しは、MuseScore形式、PDF、MIDI、オーディオ（.m4a）、.folinoファイルに対応しています。PDFは、書き込みを入れたままでも書き出せます。
     ko:
       q: 어떤 악보 파일을 열 수 있나요?
       a: |
-        MuseScore(.mscz, .mscx), MusicXML(.musicxml, .mxl), MIDI, PDF를 불러올 수 있습니다.
+        MuseScore(.mscz), MusicXML(.musicxml, .mxl), MIDI, PDF, .folino 파일을 불러올 수 있습니다.
 
         MuseScore 형식, PDF, MIDI, 오디오(.m4a), .folino 파일로 내보낼 수 있습니다. PDF는 필기를 넣은 채로도 내보낼 수 있습니다.
     zh-Hans:
       q: 可以打开哪些乐谱文件？
       a: |
-        可以导入 MuseScore（.mscz、.mscx）、MusicXML（.musicxml、.mxl）、MIDI 和 PDF。
+        可以导入 MuseScore（.mscz）、MusicXML（.musicxml、.mxl）、MIDI、PDF 和 .folino 文件。
 
         可以导出为 MuseScore 格式、PDF、MIDI、音频（.m4a）和 .folino 文件。PDF 也可以带着批注导出。
     zh-Hant:
       q: 可以打開哪些樂譜檔案？
       a: |
-        可以匯入 MuseScore（.mscz、.mscx）、MusicXML（.musicxml、.mxl）、MIDI 與 PDF。
+        可以匯入 MuseScore（.mscz）、MusicXML（.musicxml、.mxl）、MIDI、PDF 與 .folino 檔案。
 
         可以匯出為 MuseScore 格式、PDF、MIDI、音訊（.m4a）與 .folino 檔案。PDF 也可以帶著註記匯出。
 
@@ -185,23 +185,23 @@ entries:
     en:
       q: Can I use scores made in MuseScore?
       a: |
-        Yes. folino opens .mscz and .mscx files as they are, and can export back to MuseScore format. On a Mac, notes are entered with the same keys as in MuseScore.
+        Yes. folino opens .mscz files as they are, and can export back to MuseScore format. On a Mac, notes are entered with the same keys as in MuseScore.
     ja:
       q: MuseScoreで作った楽譜を使えますか？
       a: |
-        はい。MuseScoreの.msczと.mscxをそのまま読み込めて、MuseScore形式で書き出すこともできます。Macでは、音符の入力もMuseScoreと同じキー操作でできます。
+        はい。MuseScoreの.msczファイルをそのまま読み込めて、MuseScore形式で書き出すこともできます。Macでは、音符の入力もMuseScoreと同じキー操作でできます。
     ko:
       q: MuseScore로 만든 악보를 사용할 수 있나요?
       a: |
-        네. MuseScore의 .mscz와 .mscx를 그대로 불러올 수 있고, MuseScore 형식으로 내보낼 수도 있습니다. Mac에서는 음표 입력도 MuseScore와 같은 키 조작으로 할 수 있습니다.
+        네. MuseScore의 .mscz 파일을 그대로 불러올 수 있고, MuseScore 형식으로 내보낼 수도 있습니다. Mac에서는 음표 입력도 MuseScore와 같은 키 조작으로 할 수 있습니다.
     zh-Hans:
       q: 可以使用在 MuseScore 中制作的乐谱吗？
       a: |
-        可以。MuseScore 的 .mscz 和 .mscx 文件可以直接导入，也可以导出为 MuseScore 格式。在 Mac 上，输入音符的按键也与 MuseScore 相同。
+        可以。MuseScore 的 .mscz 文件可以直接导入，也可以导出为 MuseScore 格式。在 Mac 上，输入音符的按键也与 MuseScore 相同。
     zh-Hant:
       q: 可以使用在 MuseScore 製作的樂譜嗎？
       a: |
-        可以。MuseScore 的 .mscz 與 .mscx 檔案可以直接匯入，也可以匯出為 MuseScore 格式。在 Mac 上，輸入音符的按鍵也與 MuseScore 相同。
+        可以。MuseScore 的 .mscz 檔案可以直接匯入，也可以匯出為 MuseScore 格式。在 Mac 上，輸入音符的按鍵也與 MuseScore 相同。
 
   - id: pdf
     category: files
@@ -282,25 +282,25 @@ entries:
   - id: small-screen
     category: practice
     en:
-      q: Can I read scores on an iPhone screen?
+      q: Can I read scores on a phone screen?
       a: |
-        Switch between vertical scrolling, horizontal scrolling, and pages, and hide the parts you don't need. Your own part reads comfortably even on an iPhone.
+        Switch between vertical scrolling, horizontal scrolling, and pages, and hide the parts you don't need. Your own part reads comfortably even on a phone.
     ja:
-      q: iPhoneの画面でも楽譜を読めますか？
+      q: スマートフォンの画面でも楽譜を読めますか？
       a: |
-        縦スクロール、横スクロール、ページ表示を切り替えられます。使わないパートを隠せば、iPhoneの画面でも自分のパートに集中して読めます。
+        縦スクロール、横スクロール、ページ表示を切り替えられます。使わないパートを隠せば、スマートフォンの画面でも自分のパートに集中して読めます。
     ko:
-      q: iPhone 화면에서도 악보를 읽을 수 있나요?
+      q: 스마트폰 화면에서도 악보를 읽을 수 있나요?
       a: |
-        세로 스크롤, 가로 스크롤, 페이지 표시를 전환할 수 있습니다. 필요 없는 파트를 숨기면 iPhone 화면에서도 내 파트에 집중해 읽을 수 있습니다.
+        세로 스크롤, 가로 스크롤, 페이지 표시를 전환할 수 있습니다. 필요 없는 파트를 숨기면 스마트폰 화면에서도 내 파트에 집중해 읽을 수 있습니다.
     zh-Hans:
-      q: 在 iPhone 的屏幕上也能看谱吗？
+      q: 在手机屏幕上也能看谱吗？
       a: |
-        可以在纵向滚动、横向滚动和翻页显示之间切换。隐藏不需要的声部，即使在 iPhone 的屏幕上也能专注于自己的声部读谱。
+        可以在纵向滚动、横向滚动和翻页显示之间切换。隐藏不需要的声部，即使在手机屏幕上也能专注于自己的声部读谱。
     zh-Hant:
-      q: 在 iPhone 的螢幕上也能看譜嗎？
+      q: 在手機螢幕上也能看譜嗎？
       a: |
-        可以在垂直捲動、水平捲動與翻頁顯示之間切換。隱藏不需要的聲部，即使在 iPhone 的螢幕上也能專注於自己的聲部讀譜。
+        可以在垂直捲動、水平捲動與翻頁顯示之間切換。隱藏不需要的聲部，即使在手機螢幕上也能專注於自己的聲部讀譜。
 
   - id: keyboard
     category: practice
