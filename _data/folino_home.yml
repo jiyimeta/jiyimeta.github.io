@@ -6,9 +6,9 @@
 # the page does not talk about MuseScore the app.
 #
 # Headings end without a full stop, even where the App Store screenshots' copy has
-# one; the hero title is the exception, its stops separating the verbs. A comma
-# stays only where the sentence reads better with it, never to make a line look
-# like a headline.
+# one; only a hero title may keep the punctuation that separates its verbs. A
+# comma stays only where the sentence reads better with it, never to make a line
+# look like a headline.
 #
 # folino.css keeps Japanese and Chinese headings and the hero lead from breaking
 # inside a word, so they wrap only after punctuation. The lead's lines are long
@@ -21,7 +21,7 @@
 
 ja:
   title: folino (フォリノ) - 楽譜の編集と再生
-  description: 楽譜を、読む。聴く。書き換える。MuseScore・MusicXML・MIDI・PDFの楽譜を開いて、パートごとに音量を調整して聴けます。書き込みも編集も、バンド全員の楽譜にすぐ届きます。iPhone、iPad、Mac、Androidに対応。
+  description: 楽譜を読む・聴く・書く、合唱やバンドのための楽譜アプリ。MuseScore・MusicXML・MIDI・PDFの楽譜を開いて、パートごとに音量を調整して聴けます。書き込みも編集も、メンバー全員の楽譜にすぐ届きます。iPhone、iPad、Mac、Androidに対応。
 
   nav:
     features: 機能
@@ -29,9 +29,18 @@ ja:
     faq: よくある質問
     download: ダウンロード
 
-  # The title and subtitle are the App Store screenshots' copy.
+  # `title_groups` is the title in groups of parts. A line breaks between groups
+  # before it breaks between the parts of a group, so a wide screen shows one
+  # line and a narrow one breaks after 楽譜を. `title_separator` goes between
+  # groups and parts: a space here and wherever words are spaced, nothing where
+  # the title runs on (Chinese).
+  #
+  # The subtitle is the App Store screenshots' copy.
   hero:
-    title: 楽譜を、<br>読む。聴く。書き換える。
+    title_groups:
+      - [楽譜を]
+      - [読む・聴く・書く]
+    title_separator: " "
     subtitle: バンド全員でひとつの楽譜を
     lead_lines:
       - MuseScore・MusicXML・MIDI・PDFの楽譜を<wbr>開けば、<wbr>パートごとに<wbr>音量を調整して<wbr>聴けます。
@@ -40,60 +49,66 @@ ja:
       - iPhone、iPad、Mac、Android対応。
       - 閲覧・再生・書き込み・編集は無料です。
 
+  # A locale with `read` gets the page built around the title's verbs - a read
+  # section, a single write section and the export list under sharing - and no
+  # separate formats section.
+  #
+  # The format lists name MuseScore by .mscz alone: .mscx works too, but almost
+  # nobody has one. MIDI and PDF are common enough to need no extension.
+  read:
+    eyebrow: 読む
+    title: 自分のパートを見やすく
+    body: 楽譜の見え方を、自分が読みやすいように変えられます。スマートフォンの小さな画面でも、自分のパートに集中して読めます。
+    points:
+      - 縦スクロール、横スクロール、ページ表示を切り替え
+      - 使わないパートを隠して、自分のパートだけを表示
+      - 電波の届かない会場でも、オフラインで閲覧
+      - プレイリストとタグで、編成や本番ごとに整理
+    import_label: 読み込める形式
+    import:
+      - MuseScore (.mscz)
+      - MusicXML (.musicxml, .mxl)
+      - MIDI
+      - PDF
+      - folino (.folino)
+
   practice:
-    eyebrow: パート練習
-    title: 聴きたいパートだけを鳴らす
+    eyebrow: 聴く
+    title: 聴きたいパートを鳴らす
     body: パートごとに音量を変えたり、ミュートやソロにしたり、楽器を差し替えたりできます。パートごとの練習音源を1つずつ書き出して配る必要は、もうありません。
     points:
       - A-Bリピートで、難しいフレーズを繰り返し練習
       - メトロノーム、カウントイン、テンポ変更、移調
-      - 使わないパートを隠して、自分のパートに集中
       - バックグラウンド再生とピクチャインピクチャ
 
-  annotate:
-    eyebrow: 書き込み
-    title: メモを楽譜に書き込む
-    body: Apple Pencilや指で、指づかいや練習のメモを楽譜に直接書けます。表示倍率を変えたり、縦スクロールとページ表示を切り替えたりして譜面の並びが変わっても、書いた印は音符の位置についてきます。
+  # One section for writing, marks and notes together. A locale without `write`
+  # gets the older pair of sections from `annotate` and `edit`.
+  write:
+    eyebrow: 書く
+    title: メモも音符も書ける
+    body: 楽譜を一から書き、演奏の指示や練習メモを書き込むこともできます。書いたメモは、表示を切り替えても音符の位置についてきます。
     points:
-      - 書き込みは楽譜と一緒に自動で保存
-      - 書き込みを入れたまま、PDFにして共有
-      - Macではマウスやトラックパッドで書き込み
-
-  edit:
-    eyebrow: 編集・作成
-    title: 音符をその場で直す
-    body: 取り込んだ楽譜に誤りがあっても、別のアプリに戻らずに直せます。音符の入力と削除、音高の変更、和音、タイ、連符、リハーサルマークに対応し、ドラム譜も入力できます。新しい楽譜を一から作ることもできます。
-    mac_title: Macではキーボードだけで音符を入力
-    mac_body: アルファベットで音名、数字で音価を入力します。編集コマンドにはすべてキーボードショートカットを割り当てられ、「設定」>「ショートカット」の一覧から検索して変更できます。
+      - ペン（Apple Pencilなど）や指でメモを書き込み
+      - 音符の入力と削除、和音やタイ、連符、ドラム譜の入力
+      - 編成と調、拍子を選んで、新しい楽譜を作成
+      - Macでは、キーボードで音符を入力し、ショートカットも自由に設定
 
   sync:
-    eyebrow: 同期と共有グループ
+    eyebrow: 共有
     title: 書き込みも修正も、メンバー全員の楽譜に
-    body: サインインすると、楽譜は書き込みや編集も含めて自分のほかの端末と同期されます。共有グループを作れば、合唱団やバンドのメンバーとも同じ楽譜を使えます。書き込みや音符の修正は、すぐに全員の楽譜に反映されます。
+    body: サインインすれば、楽譜は書き込みや編集も含めて、自分のほかの端末やグループのメンバーにすぐ届きます。同期と共有グループ以外の機能は、サインインしなくても使えます。
     points:
-      - Macで直した楽譜を、iPadで開いて書き込む
-      - 練習の指示を書き込んで、メンバー全員に届ける
-      - 自分だけのメモは、共有せずに残しておける
-    note: 同期と共有グループ以外の機能は、サインインしなくても使えます。
-
-  formats:
-    eyebrow: 取り込みと書き出し
-    title: 手元の楽譜をそのまま開く
-    body: iPhone、iPad、Macでは、スキャンしたPDFの楽譜も取り込むときに解析して楽譜データに変換します。再生や移調、パートの表示切り替えまで、ほかの形式と同じように使えます。元のPDFの表示に切り替えることもできます。
-    import_label: 読み込み
-    import:
-      - MuseScore (.mscz, .mscx)
-      - MusicXML (.musicxml, .mxl)
-      - MIDI
-      - PDF
-    export_label: 書き出し
+      - 練習の指示を書き込んで、メンバー全員に共有
+      - 自分だけのメモは非公開のまま保存
+      - folinoを使っていない人には、書き込み入りのPDFやMuseScore形式で共有
+      - .folinoファイルで、書き込みや設定ごと楽譜を受け渡し
+    export_label: 書き出せる形式
     export:
-      - MuseScore
+      - MuseScore (.mscz)
       - PDF
       - MIDI
       - オーディオ (.m4a)
-      - .folino
-    folino_note: .folinoファイルなら、楽譜と書き込み、設定をまとめて、編集できる状態のまま別の端末に渡せます。
+      - folino (.folino)
 
   pricing:
     eyebrow: 料金
@@ -130,13 +145,15 @@ ja:
 
   # Alt text for each screenshot, keyed by the image name in folino/images/<locale>/.
   shots:
+    parts-ipad: 表示するパートを選んでいる画面
     reader-ipad: iPadで合唱曲の楽譜を開いている画面
     reader-iphone: iPhoneで同じ楽譜を開いている画面
     playback-ipad: 再生の設定を開いている画面
     annotation-ipad: 楽譜に手書きで書き込んでいる画面
     editing-ipad: 音符を選んで編集している画面
+    editing-iphone: iPhoneで音符を選んで編集している画面
     score-mac: Macで楽譜をページ表示している画面
-    group-iphone: 共有グループのメンバー一覧の画面
+    group-iphone: 共有グループのメンバーと楽譜の画面
     library-ipad: 取り込んだ楽譜を並べたライブラリの画面
 
 en:
@@ -150,7 +167,10 @@ en:
     download: Download
 
   hero:
-    title: Read the score. Hear it. Rewrite it.
+    title_groups:
+      - [Read the score.]
+      - [Hear it., Rewrite it.]
+    title_separator: " "
     subtitle: One score for the whole band
     lead_lines:
       - Open MuseScore, MusicXML, MIDI, or PDF scores and set the volume of each part as you listen.
@@ -201,7 +221,7 @@ en:
     body: On iPhone, iPad, and Mac, even a scanned PDF is read into real notation when you import it, so playback, transposition, and showing or hiding parts all work as they do with any other format. You can still switch back to the original PDF.
     import_label: Import
     import:
-      - MuseScore (.mscz, .mscx)
+      - MuseScore (.mscz)
       - MusicXML (.musicxml, .mxl)
       - MIDI
       - PDF
@@ -252,7 +272,7 @@ en:
     annotation-ipad: Handwritten marks on a score
     editing-ipad: A note selected for editing
     score-mac: A score shown page by page on a Mac
-    group-iphone: The member list of a shared group
+    group-iphone: A shared group's members and scores
     library-ipad: The library with imported scores
 
 ko:
@@ -266,7 +286,10 @@ ko:
     download: 다운로드
 
   hero:
-    title: 악보를,<br>읽다. 듣다. 고쳐 쓰다.
+    title_groups:
+      - ["악보를,"]
+      - [읽다. 듣다., 고쳐 쓰다.]
+    title_separator: " "
     subtitle: 밴드 모두가 하나의 악보로
     lead_lines:
       - MuseScore·MusicXML·MIDI·PDF 악보를 열면 파트별로 음량을 조절하며 들을 수 있습니다.
@@ -317,7 +340,7 @@ ko:
     body: iPhone, iPad, Mac에서는 스캔한 PDF 악보도 불러올 때 분석해 악보 데이터로 변환합니다. 재생과 조옮김, 파트 표시 전환까지 다른 형식과 똑같이 사용할 수 있고, 원본 PDF로 전환할 수도 있습니다.
     import_label: 불러오기
     import:
-      - MuseScore (.mscz, .mscx)
+      - MuseScore (.mscz)
       - MusicXML (.musicxml, .mxl)
       - MIDI
       - PDF
@@ -368,7 +391,7 @@ ko:
     annotation-ipad: 악보에 손으로 필기한 화면
     editing-ipad: 음표를 선택해 편집하는 화면
     score-mac: Mac에서 악보를 페이지로 표시한 화면
-    group-iphone: 공유 그룹의 멤버 목록 화면
+    group-iphone: 공유 그룹의 멤버와 악보 화면
     library-ipad: 불러온 악보가 늘어선 라이브러리 화면
 
 zh-Hans:
@@ -382,7 +405,8 @@ zh-Hans:
     download: 下载
 
   hero:
-    title: 读谱。听谱。改谱。
+    title_groups:
+      - [读谱。听谱。改谱。]
     subtitle: 全团共用一份乐谱
     lead_lines:
       - 打开 MuseScore、MusicXML、MIDI 或 PDF 乐谱，<wbr>就能按声部<wbr>调整音量来听。
@@ -433,7 +457,7 @@ zh-Hans:
     body: 在 iPhone、iPad 和 Mac 上，扫描的 PDF 乐谱也会在导入时解析并转换为乐谱数据。播放、移调、声部显示切换都能像其他格式一样使用，也可以切换回原始 PDF。
     import_label: 导入
     import:
-      - MuseScore (.mscz, .mscx)
+      - MuseScore (.mscz)
       - MusicXML (.musicxml, .mxl)
       - MIDI
       - PDF
@@ -484,7 +508,7 @@ zh-Hans:
     annotation-ipad: 在乐谱上手写批注的画面
     editing-ipad: 选中音符进行编辑的画面
     score-mac: 在 Mac 上翻页显示乐谱的画面
-    group-iphone: 共享群组的成员列表画面
+    group-iphone: 共享群组的成员与乐谱画面
     library-ipad: 排列着已导入乐谱的资料库画面
 
 zh-Hant:
@@ -498,7 +522,8 @@ zh-Hant:
     download: 下載
 
   hero:
-    title: 讀譜。聽譜。改譜。
+    title_groups:
+      - [讀譜。聽譜。改譜。]
     subtitle: 全團共用一份樂譜
     lead_lines:
       - 打開 MuseScore、MusicXML、MIDI 或 PDF 樂譜，<wbr>就能依聲部<wbr>調整音量來聽。
@@ -549,7 +574,7 @@ zh-Hant:
     body: 在 iPhone、iPad 與 Mac 上，掃描的 PDF 樂譜也會在匯入時解析並轉換為樂譜資料。播放、移調、聲部顯示切換都能像其他格式一樣使用，也可以切換回原始 PDF。
     import_label: 匯入
     import:
-      - MuseScore (.mscz, .mscx)
+      - MuseScore (.mscz)
       - MusicXML (.musicxml, .mxl)
       - MIDI
       - PDF
@@ -600,5 +625,5 @@ zh-Hant:
     annotation-ipad: 在樂譜上手寫註記的畫面
     editing-ipad: 選取音符進行編輯的畫面
     score-mac: 在 Mac 上翻頁顯示樂譜的畫面
-    group-iphone: 共享群組的成員列表畫面
+    group-iphone: 共享群組的成員與樂譜畫面
     library-ipad: 排列著已匯入樂譜的資料庫畫面

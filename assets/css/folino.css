@@ -150,6 +150,12 @@ html:lang(ko) body {
   line-height: 1.2;
 }
 
+/* A run of text that wraps as a whole: a line breaks around it before it breaks
+   inside it, and inside only once the run alone is wider than the line. */
+.fol-keep {
+  display: inline-block;
+}
+
 .fol-hero__subtitle {
   margin: 20px auto 0;
   font-size: clamp(1.2rem, 2.8vw, 1.7rem);
@@ -334,6 +340,25 @@ html:lang(ko) body {
   width: 100%;
 }
 
+/* An iPad with an iPhone in front of its lower right corner, each showing a
+   different part of the same job. */
+.fol-stack {
+  position: relative;
+  display: block;
+  padding: 0 14% 10% 0;
+}
+
+.fol-stack .fol-screen--ipad {
+  width: 100%;
+}
+
+.fol-stack .fol-screen--iphone {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+}
+
 /* A Mac window with an iPhone in front of its lower right corner: the same
    score on two of the user's devices. */
 .fol-duo {
@@ -381,6 +406,10 @@ html:lang(ko) body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
   margin: 26px 0 0;
+}
+
+.fol-formats--single {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .fol-formats__label {

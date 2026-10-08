@@ -2,23 +2,45 @@
 layout: base
 ---
 {%- comment -%}
-  folino's home page. The section order follows the App Store description - practice, annotate, edit, sync,
-  formats, price - so the page and the store listing say the same things in the same order. Words come from
-  _data/folino_home.yml; the FAQ excerpt is the `featured` entries of _data/folino_faq.yml.
+  folino's home page, built around the title's three verbs: a section each for read, listen and write, then
+  sharing, price, the FAQ excerpt and the download. Words come from _data/folino_home.yml; the FAQ excerpt is
+  the `featured` entries of _data/folino_faq.yml.
+
+  A language whose copy has no `read` yet still gets the earlier page, which follows the App Store
+  description's order - separate annotate and edit sections, and a formats section at the end; the read
+  section, the single write section and the export list under sharing appear only where their copy exists.
+  The first feature section, whichever it is, carries the `features` anchor the header links to.
+
+  The sections after the hero alternate plain and band, and a band's screenshot sits on the left. `n` counts
+  the sections as they are written out, so the alternation holds whichever of them a language has.
 {%- endcomment -%}
 {%- comment -%} This layout renders before base.html, so it assigns the same `t` base.html does. {%- endcomment -%}
 {%- assign t = site.data.i18n[page.locale] -%}
 {%- assign fh = site.data.folino_home[page.locale] -%}
 {%- assign folino_faq_url = '/folino/faq/' | append: page.locale | append: '/' | relative_url -%}
+{%- assign n = 0 -%}
 
 <section class="fol-hero">
   <div class="fol-container">
     <img class="fol-hero__icon" src="{{ '/icons/folino.webp' | relative_url }}" width="88" height="88" alt="">
     {%- comment -%}
-      The title and the subtitle are the App Store screenshots' first two claims, word for word: what folino
-      does with a score, and that a whole ensemble shares one. The lead backs each with one sentence.
+      The title and the subtitle are the App Store screenshots' first two claims: what folino does with a score,
+      and that a whole ensemble shares one. The lead backs each with one sentence.
+
+      The title is groups of parts, each an unbreakable box: a line breaks between groups first, and only
+      between the parts of a group when the group alone is still too wide. See `title_groups` in the data.
     {%- endcomment %}
-    <h1 class="fol-hero__title">{{ fh.hero.title }}</h1>
+    <h1 class="fol-hero__title">
+      {%- for group in fh.hero.title_groups -%}
+        {%- unless forloop.first %}{{ fh.hero.title_separator }}{% endunless -%}
+        <span class="fol-keep">
+          {%- for part in group -%}
+            {%- unless forloop.first %}{{ fh.hero.title_separator }}{% endunless -%}
+            <span class="fol-keep">{{ part }}</span>
+          {%- endfor -%}
+        </span>
+      {%- endfor -%}
+    </h1>
     <p class="fol-hero__subtitle">{{ fh.hero.subtitle }}</p>
     <p class="fol-hero__lead fol-lines">
       {%- for line in fh.hero.lead_lines %}
@@ -39,8 +61,40 @@ layout: base
   </div>
 </section>
 
-<section class="fol-section" id="features">
-  <div class="fol-container fol-feature">
+{%- if fh.read %}
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="features">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.read.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.read.title }}</h2>
+      <p class="fol-body">{{ fh.read.body }}</p>
+      <ul class="fol-points">
+        {%- for point in fh.read.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+      <div class="fol-formats fol-formats--single">
+        <div>
+          <p class="fol-formats__label">{{ fh.read.import_label }}</p>
+          <ul class="fol-chips">
+            {%- for item in fh.read.import %}
+            <li>{{ item }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fol-feature__media">
+      {%- include folino-screen.html shot='parts-ipad' device='ipad' %}
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="{% if fh.read %}listen{% else %}features{% endif %}">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
     <div class="fol-feature__text">
       <p class="fol-eyebrow">{{ fh.practice.eyebrow }}</p>
       <h2 class="fol-title">{{ fh.practice.title }}</h2>
@@ -57,8 +111,31 @@ layout: base
   </div>
 </section>
 
-<section class="fol-section fol-section--band" id="annotate">
-  <div class="fol-container fol-feature fol-feature--reverse">
+{%- if fh.write %}
+{%- comment -%} One section for writing: marks on an iPad, with a note being edited on an iPhone in front. {%- endcomment %}
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="write">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
+    <div class="fol-feature__text">
+      <p class="fol-eyebrow">{{ fh.write.eyebrow }}</p>
+      <h2 class="fol-title">{{ fh.write.title }}</h2>
+      <p class="fol-body">{{ fh.write.body }}</p>
+      <ul class="fol-points">
+        {%- for point in fh.write.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div class="fol-feature__media fol-stack">
+      {%- include folino-screen.html shot='annotation-ipad' device='ipad' %}
+      {%- include folino-screen.html shot='editing-iphone' device='iphone' %}
+    </div>
+  </div>
+</section>
+{%- else %}
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="write">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
     <div class="fol-feature__text">
       <p class="fol-eyebrow">{{ fh.annotate.eyebrow }}</p>
       <h2 class="fol-title">{{ fh.annotate.title }}</h2>
@@ -75,8 +152,9 @@ layout: base
   </div>
 </section>
 
-<section class="fol-section" id="edit">
-  <div class="fol-container fol-feature">
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="edit">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
     <div class="fol-feature__text">
       <p class="fol-eyebrow">{{ fh.edit.eyebrow }}</p>
       <h2 class="fol-title">{{ fh.edit.title }}</h2>
@@ -91,9 +169,11 @@ layout: base
     </div>
   </div>
 </section>
+{%- endif %}
 
-<section class="fol-section fol-section--band" id="sync">
-  <div class="fol-container fol-feature fol-feature--reverse">
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="sync">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
     <div class="fol-feature__text">
       <p class="fol-eyebrow">{{ fh.sync.eyebrow }}</p>
       <h2 class="fol-title">{{ fh.sync.title }}</h2>
@@ -103,7 +183,21 @@ layout: base
         <li>{{ point }}</li>
         {%- endfor %}
       </ul>
+      {%- if fh.sync.note %}
       <p class="fol-note">{{ fh.sync.note }}</p>
+      {%- endif %}
+      {%- if fh.sync.export %}
+      <div class="fol-formats fol-formats--single">
+        <div>
+          <p class="fol-formats__label">{{ fh.sync.export_label }}</p>
+          <ul class="fol-chips">
+            {%- for item in fh.sync.export %}
+            <li>{{ item }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+      {%- endif %}
     </div>
     <div class="fol-feature__media fol-duo">
       {%- include folino-screen.html shot='score-mac' device='mac' %}
@@ -112,8 +206,10 @@ layout: base
   </div>
 </section>
 
-<section class="fol-section" id="formats">
-  <div class="fol-container fol-feature">
+{%- if fh.formats %}
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="formats">
+  <div class="fol-container fol-feature{% if band == 0 %} fol-feature--reverse{% endif %}">
     <div class="fol-feature__text">
       <p class="fol-eyebrow">{{ fh.formats.eyebrow }}</p>
       <h2 class="fol-title">{{ fh.formats.title }}</h2>
@@ -143,8 +239,10 @@ layout: base
     </div>
   </div>
 </section>
+{%- endif %}
 
-<section class="fol-section fol-section--band" id="pricing">
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="pricing">
   <div class="fol-container fol-center">
     <p class="fol-eyebrow">{{ fh.pricing.eyebrow }}</p>
     <h2 class="fol-title">{{ fh.pricing.title }}</h2>
@@ -182,7 +280,8 @@ layout: base
   </div>
 </section>
 
-<section class="fol-section" id="faq">
+{%- assign n = n | plus: 1 %}{%- assign band = n | modulo: 2 %}
+<section class="fol-section{% if band == 0 %} fol-section--band{% endif %}" id="faq">
   <div class="fol-container fol-faq">
     <h2 class="fol-title fol-center">{{ fh.faq.title }}</h2>
 
