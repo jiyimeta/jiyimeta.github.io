@@ -6,7 +6,7 @@ permalink: /folino/privacy-policy/tr/
 ---
 # folino Gizlilik Politikası
 
-Son güncelleme: 1 Ekim 2026
+Son güncelleme: 11 Ekim 2026
 
 Bu Gizlilik Politikası, Harmolo (bundan böyle "biz") tarafından sağlanan nota uygulaması folino'nun iPhone, iPad, Mac ve Android'de bilgileri nasıl işlediğini açıklar. Harmolo'nun diğer uygulamaları [Harmolo Gizlilik Politikası](/privacy-policy/tr/) kapsamındadır.
 
@@ -26,7 +26,7 @@ folino hesap olmadan çalışır. Partisyonları görüntülemek, oynatmak, düz
 4. **Hesap, Eşzamanlama ve Paylaşılan Gruplar** (yalnızca oturum açarsanız)
    Oturum açmak isteğe bağlıdır; kitaplığınızı cihazlarınız arasında eşzamanlamayı ve bir grupla paylaşmayı mümkün kılan budur. Oturum açarsanız aşağıdaki bilgileri toplarız ve bu bilgiler hesabınızla ilişkilendirilir:
 
-   - **Hesap bilgileri.** Apple ile, Google ile veya e-posta adresinize gönderilen bir oturum açma bağlantısıyla oturum açabilirsiniz. Bir hesap tanımlayıcısı, e-posta adresinizi ("Apple ile Giriş Yap" özelliğinin "E-postamı Gizle" seçeneğini kullanırsanız bir yönlendirme adresi) ve oturum açma hizmeti sağlıyorsa veya siz giriyorsanız adınızı alırız. Bir oturum açma bağlantısı istediğinizde e-posta adresiniz sunucumuza gönderilir; sunucumuz bağlantıyı oluşturur ve e-postayı e-posta teslimat sağlayıcımız aracılığıyla gönderir. Adresin tek yönlü bir özetini (hash) ve son isteğin zamanını yalnızca tekrarlanan istekleri sınırlamak amacıyla saklarız.
+   - **Hesap bilgileri.** Apple ile, Google ile veya e-posta adresinize gönderilen bir oturum açma bağlantısıyla oturum açabilirsiniz. Bir hesap tanımlayıcısı, e-posta adresinizi ("Apple ile Giriş Yap" özelliğinin "E-postamı Gizle" seçeneğini kullanırsanız bir yönlendirme adresi) ve oturum açma hizmeti sağlıyorsa veya siz giriyorsanız adınızı alırız. Bir oturum açma bağlantısı istediğinizde e-posta adresiniz sunucumuza gönderilir; sunucumuz bağlantıyı oluşturur ve e-postayı e-posta teslimat sağlayıcımız aracılığıyla gönderir. Adresin ve isteğin geldiği ağ adresinin tek yönlü özetlerini (hash) ve isteklerin zamanlarını yalnızca tekrarlanan istekleri sınırlamak amacıyla saklar, son istekten bir gün geçtiğinde otomatik olarak sileriz.
    - **Profil.** Seçtiğiniz görünen ad ve, eklerseniz, bir profil fotoğrafı. Fotoğraflar yüklenmeden önce yeniden boyutlandırılır ve konum ile kamera meta verilerinden arındırılır. Profiliniz, üyesi olduğunuz grupların üyelerine gösterilir; hesap tanımlayıcınızı bilen ve oturum açmış diğer folino kullanıcıları da profilinizi sorgulayabilir.
    - **Partisyonlarınız ve ek açıklamalarınız.** Eşzamanlama açıkken (ayarlardan istediğiniz zaman kapatabilirsiniz), kitaplığınızdaki partisyon dosyaları, bunların ayrıntıları (başlık, besteci, dosya boyutu ve favori olup olmadıkları gibi), ek açıklamalarınız ve yaptığınız nota düzenlemelerinin geçmişi (düzenlemeyi hangi cihazın yaptığı dahil), diğer cihazlarınızın bunları alabilmesi için bulutta saklanır.
    - **Paylaşılan gruplar.** Gruplara yalnızca davetle katılınabilir. Bir gruba eklediğiniz içerikler —partisyonlar, paylaşılan olarak işaretlediğiniz ek açıklamalar, grubun adı ve resmi— görünen adınız ve profil fotoğrafınızla birlikte grubun üyelerine görünür. Özel olarak işaretlediğiniz ek açıklamalar grupla birlikte saklanır ancak diğer üyelere gösterilmez; bir grup silindiğinde bunların da kaldırılabilmesi için grubun yöneticisinin bunlara teknik erişimi vardır ve folino bunları yöneticiye hiçbir zaman göstermez.

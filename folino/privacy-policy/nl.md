@@ -6,7 +6,7 @@ permalink: /folino/privacy-policy/nl/
 ---
 # Privacybeleid van folino
 
-Laatst bijgewerkt: 1 oktober 2026
+Laatst bijgewerkt: 11 oktober 2026
 
 Dit Privacybeleid beschrijft hoe folino, de bladmuziekapp die door Harmolo (hierna "wij" of "ons") wordt aangeboden, informatie verwerkt op iPhone, iPad, Mac en Android. Op de andere apps van Harmolo is het [Privacybeleid van Harmolo](/privacy-policy/nl/) van toepassing.
 
@@ -26,7 +26,7 @@ folino werkt zonder account. Voor het lezen, afspelen, bewerken en annoteren van
 4. **Account, synchronisatie en gedeelde groepen** (alleen als je inlogt)
    Inloggen is optioneel en maakt het mogelijk je bibliotheek tussen je apparaten te synchroniseren en met een groep te delen. Als je inlogt, verzamelen wij het volgende, en dit wordt aan je account gekoppeld:
 
-   - **Accountgegevens.** Je kunt inloggen met Apple, met Google of met een inloglink die naar je e-mailadres wordt gestuurd. Wij ontvangen een account-ID, je e-mailadres (bij "Verberg mijn e-mailadres" van "Log in met Apple" een doorstuuradres) en, als de inlogdienst er een verstrekt of je er zelf een invoert, je naam. Wanneer je een inloglink aanvraagt, wordt je e-mailadres naar onze server gestuurd, die de link aanmaakt en de e-mail verstuurt via onze e-mailbezorgdienst; wij bewaren een eenrichtingshash van het adres en het tijdstip van de laatste aanvraag, uitsluitend om herhaalde aanvragen te beperken.
+   - **Accountgegevens.** Je kunt inloggen met Apple, met Google of met een inloglink die naar je e-mailadres wordt gestuurd. Wij ontvangen een account-ID, je e-mailadres (bij "Verberg mijn e-mailadres" van "Log in met Apple" een doorstuuradres) en, als de inlogdienst er een verstrekt of je er zelf een invoert, je naam. Wanneer je een inloglink aanvraagt, wordt je e-mailadres naar onze server gestuurd, die de link aanmaakt en de e-mail verstuurt via onze e-mailbezorgdienst; wij bewaren eenrichtingshashes van het adres en van het netwerkadres waar de aanvraag vandaan kwam, met de tijdstippen van de aanvragen, uitsluitend om herhaalde aanvragen te beperken, en verwijderen ze automatisch zodra er sinds de laatste aanvraag een dag is verstreken.
    - **Profiel.** De weergavenaam die je kiest en, als je er een toevoegt, een profielfoto. Foto's worden vóór het uploaden verkleind en ontdaan van locatie- en camerametadata. Je profiel wordt getoond aan de leden van de groepen waartoe je behoort, en andere ingelogde gebruikers van folino die je account-ID kennen, kunnen het opvragen.
    - **Je partituren en annotaties.** Wanneer synchronisatie is ingeschakeld (je kunt synchronisatie op elk moment uitschakelen in "Settings" [Instellingen]), worden de partituurbestanden in je bibliotheek, de bijbehorende gegevens (zoals titel, componist, bestandsgrootte en of ze als favoriet zijn gemarkeerd), je annotaties en een geschiedenis van de nootbewerkingen die je uitvoert (inclusief het apparaat waarop ze zijn uitgevoerd) in de cloud opgeslagen, zodat je andere apparaten ze ontvangen.
    - **Gedeelde groepen.** Groepen zijn alleen op uitnodiging toegankelijk. Wat je aan een groep toevoegt — partituren, de annotaties die je als gedeeld markeert, de naam en afbeelding van de groep — is zichtbaar voor de leden van de groep, samen met je weergavenaam en profielfoto. Annotaties die je als privé markeert, worden bij de groep opgeslagen maar niet aan andere leden getoond; de beheerder van de groep heeft er technische toegang toe, zodat ze bij het verwijderen van een groep kunnen worden verwijderd, en folino toont ze nooit aan de beheerder.
