@@ -1,6 +1,6 @@
 ---
-layout: folino-home
+layout: redirect
 locale: ja
-kind: folino-home
 permalink: /folino/ja/
+redirect: https://folino.app/ja/
 ---

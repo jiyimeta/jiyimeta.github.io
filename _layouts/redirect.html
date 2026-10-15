@@ -1,0 +1,19 @@
+{%- comment -%}
+  A page that moved to another site: `page.redirect` is its new URL. GitHub Pages cannot answer with a 301, so
+  the page sends the visitor on itself - the script first, carrying the #fragment along (the FAQ's answers are
+  linked by their anchors), then the meta refresh for a browser without JavaScript. Google treats an immediate
+  meta refresh as a permanent redirect, and the canonical link says the same.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="{{ page.locale }}">
+  <head>
+    <meta charset="utf-8">
+    <title>folino</title>
+    <link rel="canonical" href="{{ page.redirect }}">
+    <script>location.replace({{ page.redirect | jsonify }} + location.hash);</script>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+  </head>
+  <body>
+    <p><a href="{{ page.redirect }}">{{ page.redirect }}</a></p>
+  </body>
+</html>

@@ -11,34 +11,19 @@
   {%- assign locale_base = '/privacy-policy/' -%}
 {%- elsif page.kind == 'folino-privacy' -%}
   {%- assign locale_base = '/folino/privacy-policy/' -%}
-{%- elsif page.kind == 'folino-home' -%}
-  {%- assign locale_base = '/folino/' -%}
-{%- elsif page.kind == 'folino-faq' -%}
-  {%- assign locale_base = '/folino/faq/' -%}
 {%- endif -%}
 {%- comment -%}
   `page_locales` is every locale this page exists in, which the switcher and the hreflang alternates list.
-  It is the whole site's set except on folino's home and FAQ, which follow the app's languages and are
-  published one language at a time (_data/folino.yml). Those two also get folino's own header.
+  Every page here is published in the whole site's set.
 {%- endcomment -%}
 {%- assign page_locales = site.data.locales -%}
-{%- assign folino_page = false -%}
-{%- if page.kind == 'folino-home' or page.kind == 'folino-faq' -%}
-  {%- assign folino_page = true -%}
-  {%- assign folino_locales = site.data.folino.locales -%}
-  {%- assign page_locales = site.data.locales | where_exp: 'l', 'folino_locales contains l.code' -%}
-{%- endif -%}
 <!DOCTYPE html>
 <html lang="{{ page.locale }}">
   <head>
     {%- include head.html -%}
   </head>
   <body>
-    {%- if folino_page -%}
-    {%- include folino-header.html -%}
-    {%- else -%}
     {%- include header.html -%}
-    {%- endif -%}
 
     <main id="main">
       {{ content }}

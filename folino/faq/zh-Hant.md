@@ -1,6 +1,6 @@
 ---
-layout: folino-faq
+layout: redirect
 locale: zh-Hant
-kind: folino-faq
 permalink: /folino/faq/zh-Hant/
+redirect: https://folino.app/faq/zh-Hant/
 ---

@@ -1,6 +1,6 @@
 ---
-layout: folino-faq
+layout: redirect
 locale: ko
-kind: folino-faq
 permalink: /folino/faq/ko/
+redirect: https://folino.app/faq/ko/
 ---

@@ -11,19 +11,17 @@
 {%- assign badge = site.data.badges[page.locale] -%}
 {%- assign store = site.data.stores[page.locale] -%}
 {%- comment -%}
-  An app with pages of its own on this site links its icon, its name and a "learn more" line there. Only folino
-  has them so far: in this page's language where folino's pages are published in it (_data/folino.yml), in
-  English otherwise. The icon's link is a duplicate of the name's, so it is kept out of the tab order and away
-  from screen readers.
+  An app with a site of its own links its icon, its name and a "learn more" line there. Only folino has one so
+  far (_data/folino.yml): its home page in this page's language where folino is published in it, in English
+  otherwise. The icon's link is a duplicate of the name's, so it is kept out of the tab order and away from
+  screen readers.
 {%- endcomment -%}
 {%- assign app_home_url = nil -%}
 {%- if app.id == 'folino' -%}
-  {%- if site.data.folino.locales contains page.locale -%}
-    {%- include folino-home-url.html code=page.locale -%}
-  {%- else -%}
-    {%- include folino-home-url.html code='en' -%}
+  {%- assign app_home_url = site.data.folino.home -%}
+  {%- if page.locale != 'en' and site.data.folino.locales contains page.locale -%}
+    {%- assign app_home_url = app_home_url | append: page.locale | append: '/' -%}
   {%- endif -%}
-  {%- assign app_home_url = folino_home_url | relative_url -%}
 {%- endif -%}
 {%- capture icon -%}
   <img class="app-card__icon"

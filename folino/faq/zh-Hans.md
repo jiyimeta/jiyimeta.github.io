@@ -1,6 +1,6 @@
 ---
-layout: folino-faq
+layout: redirect
 locale: zh-Hans
-kind: folino-faq
 permalink: /folino/faq/zh-Hans/
+redirect: https://folino.app/faq/zh-Hans/
 ---

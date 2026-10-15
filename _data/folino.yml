@@ -1,21 +1,12 @@
-# folino's own pages: its home page under /folino/<locale>/ and its FAQ under
-# /folino/faq/<locale>/. Their copy lives in folino_home.yml and folino_faq.yml.
+# folino has a site of its own at https://folino.app (repo jiyimeta/folino-site): its home page is / in English
+# and /<locale>/ otherwise, its FAQ /faq/<locale>/. Google Search shows one favicon and one site name per host,
+# and on harmolo.com folino was listed under Harmolo's.
 #
-# `locales` lists the languages these pages are published in, in switcher order.
-# It follows the app, not the site: a language is added here only once the app
-# ships in it and both pages have been translated - the five the app supports are
-# en, ja, ko, zh-Hans and zh-Hant. The language switcher, the hreflang alternates
-# and the footer all read this list, so a language that is not here is never
-# linked to.
+# What stays here is folino's privacy policy (/folino/privacy-policy/, in every site locale), which the App
+# Store, Google Play and the app link to, and redirects from the old /folino/ home and FAQ URLs
+# (_layouts/redirect.html).
 #
-# The privacy policy (/folino/privacy-policy/) is not one of these pages; it is
-# published in every site locale.
+# `locales` are the languages folino.app is published in, in its switcher order; the app card links to the
+# visitor's language when it is one of them.
+home: https://folino.app/
 locales: [en, ja, ko, zh-Hans, zh-Hant]
-
-# The App Store id, for the Smart App Banner Safari shows above these pages.
-app_store_id: 6766994527
-
-# Store links, rewritten per locale with _data/stores.yml like the home page's.
-links:
-  ios: https://apps.apple.com/us/app/folino-score-viewer-player/id6766994527
-  android: https://play.google.com/store/apps/details?id=com.harmolo.folino

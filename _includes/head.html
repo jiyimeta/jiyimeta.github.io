@@ -6,23 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {%- comment -%}
-  `/` and `/folino/` are the only entry points that do not name a language, so
-  they are the only pages that guess one, each among the languages it is
-  published in. Every other URL was reached by choosing a language and is left
-  alone - and so are these once the switcher has recorded a choice.
+  `/` is the only entry point that does not name a language, so it is the only
+  page that guesses one. Every other URL was reached by choosing a language and
+  is left alone - and so is `/` once the switcher has recorded a choice.
 
   The script is inline and runs before the stylesheet so a visitor who is about
   to be sent elsewhere never sees the English page paint first. It is written
   out only here; the rest of the site stays free of JavaScript apart from the
   few lines in the layout that remember the switcher's choice.
 {%- endcomment -%}
-{%- assign guesses_language = false -%}
-{%- if page.url == '/' -%}
-  {%- assign guesses_language = true -%}
-{%- elsif page.kind == 'folino-home' and page.locale == 'en' -%}
-  {%- assign guesses_language = true -%}
-{%- endif -%}
-{%- if guesses_language %}
+{%- if page.url == '/' %}
 <script>
   (function () {
     var STORAGE_KEY = 'harmolo-lang';
@@ -69,25 +62,11 @@
   {%- assign page_title = t.privacy_link | append: ' | ' | append: site.title -%}
 {%- elsif page.kind == 'folino-privacy' -%}
   {%- assign page_title = 'folino ' | append: t.privacy_link | append: ' | ' | append: site.title -%}
-{%- elsif page.kind == 'folino-home' -%}
-  {%- assign page_title = site.data.folino_home[page.locale].title -%}
-  {%- assign page_description = site.data.folino_home[page.locale].description -%}
-{%- elsif page.kind == 'folino-faq' -%}
-  {%- assign page_title = site.data.folino_home[page.locale].nav.faq | append: ' | folino' -%}
-  {%- assign page_description = site.data.folino_home[page.locale].description -%}
 {%- else -%}
   {%- assign page_title = site.title -%}
 {%- endif -%}
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_description }}">
-
-{%- comment -%}
-  Safari's Smart App Banner: "Open" when folino is installed, "Get" when it is not. It needs no domain
-  association, and one app per page, so it is on folino's own pages only.
-{%- endcomment -%}
-{%- if folino_page %}
-<meta name="apple-itunes-app" content="app-id={{ site.data.folino.app_store_id }}">
-{%- endif %}
 
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
@@ -112,15 +91,12 @@
 <meta name="twitter:card" content="summary">
 
 {%- comment -%}
-  Everything under /folino/ - its home, FAQ and privacy policy - shows folino's icon in the tab, the rest of the
-  site Harmolo's. Google Search shows one favicon per host, so search results keep Harmolo's either way.
+  folino's privacy policy shows folino's icon in the tab, the rest of the site Harmolo's. (folino's own pages are
+  on https://folino.app; Google Search shows one favicon per host, which is why they moved there.)
 {%- endcomment -%}
-{%- if folino_page or page.kind == 'folino-privacy' %}
+{%- if page.kind == 'folino-privacy' %}
 <link rel="icon" href="{{ '/folino/images/favicon.png' | relative_url }}" type="image/png" sizes="64x64">
 {%- else %}
 <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
 {%- endif %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-{%- if folino_page %}
-<link rel="stylesheet" href="{{ '/assets/css/folino.css' | relative_url }}">
-{%- endif %}

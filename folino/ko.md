@@ -1,6 +1,6 @@
 ---
-layout: folino-home
+layout: redirect
 locale: ko
-kind: folino-home
 permalink: /folino/ko/
+redirect: https://folino.app/ko/
 ---

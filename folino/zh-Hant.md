@@ -1,6 +1,6 @@
 ---
-layout: folino-home
+layout: redirect
 locale: zh-Hant
-kind: folino-home
 permalink: /folino/zh-Hant/
+redirect: https://folino.app/zh-Hant/
 ---
