@@ -111,7 +111,15 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta name="twitter:card" content="summary">
 
+{%- comment -%}
+  Everything under /folino/ - its home, FAQ and privacy policy - shows folino's icon in the tab, the rest of the
+  site Harmolo's. Google Search shows one favicon per host, so search results keep Harmolo's either way.
+{%- endcomment -%}
+{%- if folino_page or page.kind == 'folino-privacy' %}
+<link rel="icon" href="{{ '/folino/images/favicon.png' | relative_url }}" type="image/png" sizes="64x64">
+{%- else %}
 <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+{%- endif %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 {%- if folino_page %}
 <link rel="stylesheet" href="{{ '/assets/css/folino.css' | relative_url }}">
