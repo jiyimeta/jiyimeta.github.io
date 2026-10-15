@@ -8,7 +8,7 @@ redirect_from:
 ---
 # 隱私政策
 
-本隱私政策適用於 Harmolo（以下簡稱「我們」）所提供的所有行動應用程式（以下簡稱「本應用程式」），但 folino 除外，folino 適用其專屬的 [folino 隱私政策](/folino/privacy-policy/zh-Hant/)。
+本隱私政策適用於 Harmolo（以下簡稱「我們」）所提供的所有行動應用程式（以下簡稱「本應用程式」），但 folino 除外，folino 適用其專屬的 [folino 隱私政策](https://folino.app/privacy-policy/zh-Hant/)。
 
 各應用程式的功能各不相同，因此**以下所述並非每一項都適用於每個應用程式**。每個應用程式僅收集其自身功能所需的資料。我們的許多應用程式除選用的當機診斷外不收集任何資料，並可完全離線運作。特定應用程式實際處理的資料，請查看該應用程式在各商店的揭露（App Store 的隱私詳情或 Google Play 的資料安全部分）。
 

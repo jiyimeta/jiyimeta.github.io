@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Gizlilik Politikası
 
-Bu Gizlilik Politikası, Harmolo (bundan böyle "biz") tarafından sağlanan tüm mobil uygulamalar için geçerlidir; ancak kendine ait [folino Gizlilik Politikası](/folino/privacy-policy/tr/) bulunan folino bu politikanın kapsamı dışındadır.
+Bu Gizlilik Politikası, Harmolo (bundan böyle "biz") tarafından sağlanan tüm mobil uygulamalar için geçerlidir; ancak kendine ait [folino Gizlilik Politikası](https://folino.app/privacy-policy/tr/) bulunan folino bu politikanın kapsamı dışındadır.
 
 Uygulamalarımız yaptıkları işler bakımından farklılık gösterir; bu nedenle **aşağıda açıklanan uygulamaların tümü her uygulama için geçerli değildir**. Her uygulama yalnızca kendi işlevleriyle ilgili verileri toplar; uygulamalarımızın çoğu, isteğe bağlı çökme tanılama verileri dışında hiçbir şey toplamaz ve tamamen çevrimdışı çalışır. Belirli bir uygulamanın tam olarak hangi verileri işlediğini öğrenmek için o uygulamanın mağaza sayfasındaki veri açıklamasına (App Store'daki gizlilik ayrıntıları veya Google Play'deki "Veri güvenliği" bölümü) bakın.
 

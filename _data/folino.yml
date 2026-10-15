@@ -1,12 +1,11 @@
 # folino has a site of its own at https://folino.app (repo jiyimeta/folino-site): its home page is / in English
-# and /<locale>/ otherwise, its FAQ /faq/<locale>/. Google Search shows one favicon and one site name per host,
-# and on harmolo.com folino was listed under Harmolo's.
+# and /<locale>/ otherwise, its FAQ /faq/<locale>/ and its privacy policy /privacy-policy/<locale>/. Google
+# Search shows one favicon and one site name per host, and on harmolo.com folino was listed under Harmolo's.
 #
-# What stays here is folino's privacy policy (/folino/privacy-policy/, in every site locale), which the App
-# Store, Google Play and the app link to, and redirects from the old /folino/ home and FAQ URLs
-# (_layouts/redirect.html).
+# What stays here are redirects from the old /folino/ home, FAQ and privacy-policy URLs (_layouts/redirect.html).
+# Apps already shipped, and the stores, link to the old policy URLs, so those redirects stay for good.
 #
-# `locales` are the languages folino.app is published in, in its switcher order; the app card links to the
-# visitor's language when it is one of them.
+# `locales` are the languages folino.app's home page is published in, in its switcher order; the app card links
+# to the visitor's language when it is one of them.
 home: https://folino.app/
 locales: [en, ja, ko, zh-Hans, zh-Hant]

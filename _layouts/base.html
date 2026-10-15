@@ -3,14 +3,12 @@
 {%- comment -%}
   A privacy page exists once per locale under a common base, and the language switcher, the hreflang
   alternates and the footer all point at the same page in another locale. `locale_base` is that base, or nil
-  for the home pages (which use each locale's own `path`). Harmolo's shared policy and folino's own policy are
-  the two kinds; the includes read this variable rather than matching `page.kind` themselves.
+  for the home pages (which use each locale's own `path`). The includes read this variable rather than matching
+  `page.kind` themselves.
 {%- endcomment -%}
 {%- assign locale_base = nil -%}
 {%- if page.kind == 'privacy' -%}
   {%- assign locale_base = '/privacy-policy/' -%}
-{%- elsif page.kind == 'folino-privacy' -%}
-  {%- assign locale_base = '/folino/privacy-policy/' -%}
 {%- endif -%}
 {%- comment -%}
   `page_locales` is every locale this page exists in, which the switcher and the hreflang alternates list.

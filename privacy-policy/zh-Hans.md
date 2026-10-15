@@ -8,7 +8,7 @@ redirect_from:
 ---
 # 隐私政策
 
-本隐私政策适用于 Harmolo（以下简称“我们”）所提供的所有移动应用程序（以下简称“本应用”），但 folino 除外，folino 适用其专属的 [folino 隐私政策](/folino/privacy-policy/zh-Hans/)。
+本隐私政策适用于 Harmolo（以下简称“我们”）所提供的所有移动应用程序（以下简称“本应用”），但 folino 除外，folino 适用其专属的 [folino 隐私政策](https://folino.app/privacy-policy/zh-Hans/)。
 
 各应用的功能各不相同，因此**以下所述并非每一项都适用于每个应用**。每个应用仅收集其自身功能所需的数据。我们的许多应用除可选的崩溃诊断外不收集任何数据，并可完全离线运行。特定应用实际处理的数据，请查看该应用在各商店的披露（App Store 的隐私详情或 Google Play 的数据安全部分）。
 

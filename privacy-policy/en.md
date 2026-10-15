@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Privacy Policy
 
-This Privacy Policy applies to all mobile applications provided by Harmolo (hereinafter referred to as “we” or “our”), except folino, which has its own [folino Privacy Policy](/folino/privacy-policy/en/).
+This Privacy Policy applies to all mobile applications provided by Harmolo (hereinafter referred to as “we” or “our”), except folino, which has its own [folino Privacy Policy](https://folino.app/privacy-policy/en/).
 
 Our apps differ in what they do, so **not every practice described below applies to every app**. Each app collects only the data relevant to its own features — many of our apps collect nothing beyond optional crash diagnostics and work entirely offline. For the exact data a specific app handles, see that app's data disclosure on its store page (the App Store privacy details or the Google Play Data safety section).
 

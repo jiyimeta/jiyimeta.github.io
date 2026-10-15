@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Informativa sulla privacy
 
-La presente Informativa sulla privacy si applica a tutte le applicazioni mobili fornite da Harmolo (di seguito "noi"), ad eccezione di folino, che dispone di una propria [Informativa sulla privacy di folino](/folino/privacy-policy/it/).
+La presente Informativa sulla privacy si applica a tutte le applicazioni mobili fornite da Harmolo (di seguito "noi"), ad eccezione di folino, che dispone di una propria [Informativa sulla privacy di folino](https://folino.app/privacy-policy/it/).
 
 Le nostre app differiscono per ciò che fanno, pertanto **non tutte le pratiche descritte di seguito si applicano a ogni app**. Ogni app raccoglie solo i dati pertinenti alle proprie funzioni: molte delle nostre app non raccolgono nulla oltre alle diagnostiche di arresto anomalo facoltative e funzionano interamente offline. Per conoscere i dati esatti trattati da una specifica app, consulta le informazioni sui dati di quell'app nella relativa pagina dello store (i dettagli sulla privacy nell'App Store o la sezione "Sicurezza dei dati" su Google Play).
 
