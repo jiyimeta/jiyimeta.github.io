@@ -15,6 +15,7 @@ en:
   email_label: Email
   privacy_link: Privacy policy
   back_to_home: Back to home
+  learn_more: Learn more
   stores:
     ios: App Store
     android: Google Play
@@ -33,6 +34,7 @@ ja:
   email_label: メールアドレス
   privacy_link: プライバシーポリシー
   back_to_home: ホームに戻る
+  learn_more: 詳しく見る
   stores:
     ios: App Store
     android: Google Play
@@ -56,6 +58,7 @@ ko:
   email_label: 이메일
   privacy_link: 개인정보 처리방침
   back_to_home: 홈으로 돌아가기
+  learn_more: 자세히 보기
   stores:
     ios: App Store
     android: Google Play
@@ -76,6 +79,7 @@ zh-Hans:
   email_label: 电子邮箱
   privacy_link: 隐私政策
   back_to_home: 返回首页
+  learn_more: 了解更多
   stores:
     ios: App Store
     android: Google Play
@@ -96,6 +100,7 @@ zh-Hant:
   email_label: 電子郵件
   privacy_link: 隱私政策
   back_to_home: 返回首頁
+  learn_more: 了解更多
   stores:
     ios: App Store
     android: Google Play
@@ -116,6 +121,7 @@ de:
   email_label: E-Mail
   privacy_link: Datenschutzerklärung
   back_to_home: Zurück zur Startseite
+  learn_more: Mehr erfahren
   stores:
     ios: App Store
     android: Google Play
@@ -134,6 +140,7 @@ es:
   email_label: Correo electrónico
   privacy_link: Política de privacidad
   back_to_home: Volver al inicio
+  learn_more: Más información
   stores:
     ios: App Store
     android: Google Play
@@ -152,6 +159,7 @@ fr:
   email_label: E-mail
   privacy_link: Politique de confidentialité
   back_to_home: Retour à l'accueil
+  learn_more: En savoir plus
   stores:
     ios: App Store
     android: Google Play
@@ -170,6 +178,7 @@ it:
   email_label: Email
   privacy_link: Informativa sulla privacy
   back_to_home: Torna alla home
+  learn_more: Scopri di più
   stores:
     ios: App Store
     android: Google Play
@@ -188,6 +197,7 @@ nl:
   email_label: E-mail
   privacy_link: Privacybeleid
   back_to_home: Terug naar de startpagina
+  learn_more: Meer informatie
   stores:
     ios: App Store
     android: Google Play
@@ -206,6 +216,7 @@ pt-BR:
   email_label: E-mail
   privacy_link: Política de Privacidade
   back_to_home: Voltar ao início
+  learn_more: Saiba mais
   stores:
     ios: App Store
     android: Google Play
@@ -224,6 +235,7 @@ ru:
   email_label: Эл. почта
   privacy_link: Политика конфиденциальности
   back_to_home: На главную
+  learn_more: Подробнее
   stores:
     ios: App Store
     android: Google Play
@@ -242,6 +254,7 @@ tr:
   email_label: E-posta
   privacy_link: Gizlilik Politikası
   back_to_home: Ana sayfaya dön
+  learn_more: Daha fazla bilgi
   stores:
     ios: App Store
     android: Google Play

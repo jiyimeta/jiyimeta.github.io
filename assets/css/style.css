@@ -324,6 +324,40 @@ a {
   color: var(--muted);
 }
 
+/* An app with its own pages here: the icon and the name lead there in the
+   card's own colours, and the "learn more" line in the accent says so. */
+
+.app-card__icon-link {
+  display: block;
+  flex: none;
+  line-height: 0;
+}
+
+.app-card__name a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.app-card__name a:hover {
+  color: var(--accent);
+}
+
+.app-card__more {
+  margin: 8px 0 0;
+  font-size: 0.94rem;
+}
+
+.app-card__more a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.app-card__more a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 /* Store badges.
    Apple and Google ship one badge design each, both black with a #a6a6a6
    border, and Google offers no light variant - so the row reads as black in

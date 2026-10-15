@@ -10,14 +10,44 @@
 {%- endcomment -%}
 {%- assign badge = site.data.badges[page.locale] -%}
 {%- assign store = site.data.stores[page.locale] -%}
-<li class="app-card">
+{%- comment -%}
+  An app with pages of its own on this site links its icon, its name and a "learn more" line there. Only folino
+  has them so far: in this page's language where folino's pages are published in it (_data/folino.yml), in
+  English otherwise. The icon's link is a duplicate of the name's, so it is kept out of the tab order and away
+  from screen readers.
+{%- endcomment -%}
+{%- assign app_home_url = nil -%}
+{%- if app.id == 'folino' -%}
+  {%- if site.data.folino.locales contains page.locale -%}
+    {%- include folino-home-url.html code=page.locale -%}
+  {%- else -%}
+    {%- include folino-home-url.html code='en' -%}
+  {%- endif -%}
+  {%- assign app_home_url = folino_home_url | relative_url -%}
+{%- endif -%}
+{%- capture icon -%}
   <img class="app-card__icon"
        src="{{ '/icons/' | append: app.icon | relative_url }}"
        width="64" height="64" alt="" loading="lazy" decoding="async">
+{%- endcapture -%}
+<li class="app-card">
+  {%- if app_home_url %}
+  <a class="app-card__icon-link" href="{{ app_home_url }}" tabindex="-1" aria-hidden="true">{{ icon }}</a>
+  {%- else %}
+  {{ icon }}
+  {%- endif %}
 
   <div class="app-card__body">
-    <h3 class="app-card__name">{{ t.app_names[app.id] | default: app.name }}</h3>
+    {%- assign app_name = t.app_names[app.id] | default: app.name %}
+    {%- if app_home_url %}
+    <h3 class="app-card__name"><a href="{{ app_home_url }}">{{ app_name }}</a></h3>
+    {%- else %}
+    <h3 class="app-card__name">{{ app_name }}</h3>
+    {%- endif %}
     <p class="app-card__desc">{{ t.apps[app.id] }}</p>
+    {%- if app_home_url %}
+    <p class="app-card__more"><a href="{{ app_home_url }}">{{ t.learn_more }}<span aria-hidden="true"> →</span></a></p>
+    {%- endif %}
 
     <ul class="app-card__links">
       {%- for link in app.links %}
